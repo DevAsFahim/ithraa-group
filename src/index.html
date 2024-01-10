@@ -16,7 +16,7 @@
 <body>
 
   <header class="relative z-20">
-    <div class="bg-[#e5a770] pb-11 p-2 text-white">
+    <div class="bg-[#e5a770] md:pb-11 p-2 text-white ">
       <div class="max-w-[1100px] mx-auto flex justify-between items-center">
         <div class="flex gap-3 items-center text-sm">
           <span>Follow Us: </span>
@@ -48,33 +48,45 @@
     </div>
 
     <div
-      class="header-wrapper z-10 absolute top-[50px] left-1/2 -translate-x-1/2 w-full bg-[#16191d] text-[#e5a770] flex justify-between items-center max-w-[1100px] mx-auto">
+      class="py-[15px] px-[30px] md:rounded-[12px] border-b border-b-[#2c2a2a] md:border-none z-10 md:absolute md:top-[50px] md:left-1/2 md:-translate-x-1/2 w-full bg-[#16191d] text-[#e5a770] flex justify-between items-center max-w-[1100px] mx-auto">
       <div class="logo">
-        <img class="w-[150px] h-[50px] object-cover" src="../image/logo.png" alt="">
+        <a href="index.html"><img class="w-[100px] md:w-[150px] h-[50px] object-cover" src="../image/logo.png" alt=""></a>
       </div>
-      <ul class="text-[#e5a770] flex items-center gap-4">
-        <li><a class="font-medium text-[16px] hover:text-[#f7caa2]" href="#">Packages</a></li>
-        <li><a class="font-medium text-[16px] hover:text-[#f7caa2]" href="#">About Us</a></li>
-        <li><a class="font-medium text-[16px] hover:text-[#f7caa2]" href="#">Services</a></li>
-        <li><a class="font-medium text-[16px] hover:text-[#f7caa2]" href="#">Contact Us</a></li>
+      <div class="md:hidden">
+        <i id="nav-show" class="fa-solid fa-bars text-[20px]"></i>
+        <i style="display: none;" id="nav-hide" class="fa-solid fa-xmark text-[20px]"></i>
+      </div>
+      <ul class="text-[#e5a770] hidden md:flex items-center gap-4">
+        <li><a class="font-medium text-[16px] hover:text-[#f7caa2]" href="./packages.html">Packages</a></li>
+        <li><a class="font-medium text-[16px] hover:text-[#f7caa2]" href="./about.html">About Us</a></li>
+        <li><a class="font-medium text-[16px] hover:text-[#f7caa2]" href="./services.html">Services</a></li>
+        <li><a class="font-medium text-[16px] hover:text-[#f7caa2]" href="./contact.html">Contact Us</a></li>
       </ul>
+
     </div>
+    
+    <ul id="mobile-menu" class="min-h-screen bg-[#16191d] text-[#e5a770] hidden p-5">
+      <li><a class="rounded-sm block mb-3 py-1 px-2 hover:bg-[#e5a770] hover:text-white font-medium text-[16px]" href="./packages.html">Packages</a></li>
+      <li><a class="rounded-sm block mb-3 py-1 px-2 hover:bg-[#e5a770] hover:text-white font-medium text-[16px]" href="./about.html">About Us</a></li>
+      <li><a class="rounded-sm block mb-3 py-1 px-2 hover:bg-[#e5a770] hover:text-white font-medium text-[16px]" href="./services.html">Services</a></li>
+      <li><a class="rounded-sm block mb-3 py-1 px-2 hover:bg-[#e5a770] hover:text-white font-medium text-[16px]" href="./contact.html">Contact Us</a></li>      
+    </ul>
   </header>
 
-  <section class="h-[100vh] max-h-[800px] overflow-hidden w-full -z-10 relative">
-    <div class="absolute top-0 left-0 bottom-0 w-1/2 bg-[#000000e5] z-10 flex items-center justify-center">
+  <section class="h-[50vh] lg:h-[100vh] max-h-[800px] overflow-hidden w-full -z-10 relative">
+    <div class="absolute top-0 left-0 lg:bottom-0 lg:w-1/2 bg-[#000000e5] z-10 flex items-center justify-center h-full max-h-full">
       <img src="../image/banner-image.png" class="w-1/2" alt="">
     </div>
-    <div class="hero-slider">
-      <div><img class="h-full w-full" src="../image/h-slider-1.jpg" alt=""></div>
-      <div><img class="h-full w-full" src="../image/h-slider-2.jpg" alt=""></div>
-      <div><img class="h-full w-full" src="../image/h-slider-3.jpg" alt=""></div>
-      <div><img class="h-full w-full" src="../image/h-slider-4.jpg" alt=""></div>
+    <div class="hero-slider mit-h-full">
+      <div class="min-h-[50vh]"><img class="h-full w-full object-cover min-h-[50vh]" src="../image/h-slider-1.jpg" alt=""></div>
+      <div class="min-h-[50vh]"><img class="h-full w-full object-cover min-h-[50vh]" src="../image/h-slider-2.jpg" alt=""></div>
+      <div class="min-h-[50vh]"><img class="h-full w-full object-cover min-h-[50vh]" src="../image/h-slider-3.jpg" alt=""></div>
+      <div class="min-h-[50vh]"><img class="h-full w-full object-cover min-h-[50vh]" src="../image/h-slider-4.jpg" alt=""></div>
     </div>
   </section>
 
-  <section class="bg-[#F1F1F1] ">
-    <div class="max-w-[1260px] flex gap-10 items-center mx-auto py-24">
+  <section class="bg-[#F1F1F1] px-3 xxl:px-0">
+    <div class="max-w-[1260px] flex gap-10 items-center mx-auto py-16 lg:py-24 flex-col lg:flex-row">
       <div class="basis-1/2">
         <img src="../image/about-image.jpg" class="border-8 border-[#e5a770] rounded-md" alt="">
       </div>
@@ -93,9 +105,9 @@
     </div>
   </section>
 
-  <section class="relative w-full overflow-hidden">
-    <img src="../image/shape-2.jpg" alt="" class="absolute right-0 translate-x-1/2 h-full opacity-55">
-    <div class="flex gap-10 items-center max-w-[1260px] mx-auto py-24">
+  <section class="relative w-full overflow-hidden px-3 xxl:px-0">
+    <img src="../image/shape-2.jpg" alt="" class="absolute right-0 translate-x-1/2 h-full opacity-55 hidden md:block">
+    <div class="flex gap-10 items-center max-w-[1260px] mx-auto py-16 md:py-24 flex-col-reverse lg:flex-row">
       <div class="basis-1/2">
         <h3 class="text-[40px] text-[#16191d] font-semibold mb-5">Our Services</h3>
         <p class="text-[#555353] max-w-[500px]">Whether you're a first-time pilgrim or a seasoned traveler, our Hajj
@@ -106,7 +118,7 @@
           More</button>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4 content-end">
-        <div class="rounded-[5px] overflow-hidden relative h-[330px] max-w-[240px] group">
+        <div class="rounded-[5px] overflow-hidden relative md:h-[330px] md:max-w-[240px] group">
           <div
             class="transition-all text-white bg-[#000000b4] absolute inset-0 group-hover:opacity-100 group-hover:translate-y-0 translate-y-1/2 opacity-0 px-4 py-5">
             <h4 class="font-bold text-[25px]">Service</h4>
@@ -115,7 +127,7 @@
           </div>
           <img src="../image/service-1.jpg" class="h-full w-full object-cover" alt="">
         </div>
-        <div class="rounded-[5px] overflow-hidden relative h-[330px] max-w-[240px] -mt-4 group">
+        <div class="rounded-[5px] overflow-hidden relative h-[330px] md:h-[330px] md:max-w-[240px] lg:-mt-4 group">
           <div
             class="transition-all text-white bg-[#000000b4] absolute inset-0 group-hover:opacity-100 group-hover:translate-y-0 translate-y-1/2 opacity-0 px-4 py-5">
             <h4 class="font-bold text-[25px]">Service</h4>
@@ -124,7 +136,7 @@
           </div>
           <img src="../image/service-2.jpg" class="h-full w-full object-cover" alt="">
         </div>
-        <div class="rounded-[5px] overflow-hidden relative h-[330px] max-w-[240px] group">
+        <div class="rounded-[5px] overflow-hidden relative h-[330px] md:h-[330px] md:max-w-[240px] group">
           <div
             class="transition-all text-white bg-[#000000b4] absolute inset-0 group-hover:opacity-100 group-hover:translate-y-0 translate-y-1/2 opacity-0 px-4 py-5">
             <h4 class="font-bold text-[25px]">Service</h4>
@@ -133,7 +145,7 @@
           </div>
           <img src="../image/service-3.jpg" class="h-full w-full object-cover" alt="">
         </div>
-        <div class="rounded-[5px] overflow-hidden relative h-[330px] max-w-[240px] -mt-4 group">
+        <div class="rounded-[5px] overflow-hidden relative h-[330px] md:h-[330px] md:max-w-[240px] lg:-mt-4 group">
           <div
             class="transition-all text-white bg-[#000000b4] absolute inset-0 group-hover:opacity-100 group-hover:translate-y-0 translate-y-1/2 opacity-0 px-4 py-5">
             <h4 class="font-bold text-[25px]">Service</h4>
@@ -146,27 +158,27 @@
     </div>
   </section>
 
-  <section class="bg-[#F1F1F1] py-20">
+  <section class="bg-[#F1F1F1] py-16 md:py-20">
     <div class="max-w-[1170px] mx-auto">
       <h1 class="text-[40px] text-[#16191d] font-semibold mb-5 text-center">Countries We Serve</h1>
       <hr>
-      <div class="bg-[url('../image/world-map.png')] w-full bg-contain bg-no-repeat bg-center h-[500px]">
-        <div class="py-24 flex justify-center items-start mx-auto lg:max-w-[700px] flex-wrap gap-5">
-          <img class="h-[100px] w-[200px] object-cover" src="../image/canada.svg" alt="">
-          <img class="h-[100px] w-[200px] object-cover" src="../image/us.svg" alt="">
-          <img class="h-[100px] w-[200px] object-cover" src="../image/italy.svg" alt="">
-          <img class="h-[100px] w-[200px] object-cover" src="../image/belgium.svg" alt="">
-          <img class="h-[100px] w-[200px] object-cover" src="../image/france.svg" alt="">
-          <img class="h-[100px] w-[200px] object-cover" src="../image/germany.svg" alt="">
+      <div class="bg-[url('../image/world-map.png')] w-full bg-contain bg-no-repeat bg-center md:h-[500px]">
+        <div class="py-8 md:py-24 flex justify-center items-start mx-auto lg:max-w-[700px] flex-wrap gap-5">
+          <img class="h-[100px] w-[150px] md:w-[200px] object-cover" src="../image/canada.svg" alt="">
+          <img class="h-[100px] w-[150px] md:w-[200px] object-cover" src="../image/us.svg" alt="">
+          <img class="h-[100px] w-[150px] md:w-[200px] object-cover" src="../image/italy.svg" alt="">
+          <img class="h-[100px] w-[150px] md:w-[200px] object-cover" src="../image/belgium.svg" alt="">
+          <img class="h-[100px] w-[150px] md:w-[200px] object-cover" src="../image/france.svg" alt="">
+          <img class="h-[100px] w-[150px] md:w-[200px] object-cover" src="../image/germany.svg" alt="">
         </div>
       </div>
     </div>
   </section>
 
-  <section class="py-40">
-    <div class="bg-[#e5a770] h-[400px]">
-      <div class="max-w-[1270px] mx-auto flex justify-between items-center gap-5 relative h-full">
-        <div class="text-white">
+  <section class="py-16 md:py-40">
+    <div class="md:bg-[#e5a770] md:h-[400px]">
+      <div class="max-w-[1270px] mx-auto px-3 flex justify-center md:justify-between items-center gap-5 relative h-full">
+        <div class="text-white md:block hidden">
           <div class="mb-5 flex items-start gap-5">
             <i class="fa-solid fa-phone-volume text-[24px]"></i>
             <div>
@@ -196,7 +208,7 @@
         </div>
         
         <div>
-          <form class="bg-white shadow-lg rounded-[15px] px-6 py-8 border border-gray-200 max-w-[450px] -mt-[100px] absolute top-0 right-0">
+          <form class="bg-white shadow-lg rounded-[15px] px-6 py-8 border border-gray-200 max-w-[450px] md:-mt-[100px] md:absolute top-0 right-0">
             <h1 class="text-black text-[30px] font-semibold mb-5">Contact Us</h1>
             <div class="flex gap-3 mb-3">
               <div class="w-50">
@@ -228,7 +240,6 @@
                 placeholder="Enter Your Message" rows="5"></textarea>
             </div>
       
-      
             <button class="bg-[#e5a770] px-[25px] py-[10px] text-white rounded-md hover:bg-[#91653f] mt-5 block ml-auto" >
               Submit
             </button>
@@ -238,93 +249,6 @@
     </div>
   </section>
 
-  <!-- <div id="modal">
-    <div class="modal-content">
-      <span class="close-modal">
-        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M13 25C19.6274 25 25 19.6274 25 13C25 6.37258 19.6274 1 13 1C6.37258 1 1 6.37258 1 13C1 19.6274 6.37258 25 13 25Z"
-            stroke="#FF6666" stroke-linecap="round" stroke-linejoin="round" />
-          <path d="M16.5999 9.39999L9.3999 16.6" stroke="#FF6666" stroke-linecap="round" stroke-linejoin="round" />
-          <path d="M9.3999 9.39999L16.5999 16.6" stroke="#FF6666" stroke-linecap="round" stroke-linejoin="round" />
-        </svg>
-      </span>
-      <div>
-        <div class="login-content">
-          <h2 class="heading">Register your Account</h2>
-          <p>Please Login to your account.</p>
-          <form>
-            <div>
-              <label class="input-label" for="register-email">Email address*</label>
-              <input class="input d-block w-100" id="register-email" type="email" placeholder="name@company.com">
-            </div>
-            <div>
-              <label class="input-label" for="register-company">Company Name*</label>
-              <input class="input d-block w-100" id="register-company" type="text" placeholder="name@company.com">
-            </div>
-            <div>
-              <div class="password-label d-flex justify-content-between align-items-center ">
-                <label class="input-label" for="admin-password">Admin Password*</label>
-              </div>
-              <input class="input d-block w-100" id="admin-password" type="password" placeholder="******** ">
-            </div>
-            <div>
-              <div class="password-label d-flex justify-content-between align-items-center ">
-                <label class="input-label" for="confirm-password">Confirm Password*</label>
-              </div>
-              <input class="input d-block w-100" id="confirm-password" type="password" placeholder="******** ">
-            </div>
-            <button type="submit" class="btn-default d-block w-100">Register</button>
-          </form>
-          <div class="new-account">
-            <span>Already have an account?</span>
-            <button>Login</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> -->
-
-
-  <!-- <section class="banner px-4 d-flex align-items-center">
-    <div class="login-container  relative">
-      <div class="login-content">
-        <img src="../image/login-shape.png" alt="image" class="login-left-shape">
-        <img src="../image/login-shape-2.png" alt="image" class="login-shape-2">
-        <h2 class="heading">Welcome Back!</h2>
-        <p>Please Login to your account.</p>
-        <form>
-          <div>
-            <label class="input-label" for="email">Email address*</label>
-            <input class="input d-block w-100" id="email" type="email" placeholder="name@company.com">
-          </div>
-          <div>
-            <div class="password-label d-flex justify-content-between align-items-center ">
-              <label class="input-label" for="password">password*</label>
-              <a href="#">Forgot password?</a>
-            </div>
-            <input class="input d-block w-100" id="password" type="password" placeholder="make#$strong@pass**">
-          </div>
-          <div class="checkbox-wrapper d-flex align-items-center">
-            <input id="remenber-info" type="checkbox">
-            <label for="remenber-info">remember information</label>
-          </div>
-          <button type="submit" class="btn-default d-block w-100">Login</button>
-        </form>
-        <div class="new-account">
-          <span>Not a member?</span>
-          <button id="modal-trigger">Register</button>
-        </div>
-      </div>
-    </div>
-    <div class="banner-content">
-      <h1 class="heading">Rehab is the one-tap solution for all your travel concerns</h1>
-      <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
-        some form.</p>
-    </div>
-  </section> -->
-
-
   <footer class="footer bg-[#16191d]">
     <div class="footer-top">
       <div class="footer-top-container px-4 flex justify-between items-center">
@@ -332,10 +256,10 @@
           <img class="w-[250px] h-[80px] object-cover" src="../image/logo.png" alt="image">
         </div>
         <ul class="footer-links">
-          <li><a href="#">Umrah 2024</a></li>
-          <li><a href="#">Hajj 2024</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a class="whitespace-nowrap" href="#">Umrah 2024</a></li>
+          <li><a class="whitespace-nowrap" href="#">Hajj 2024</a></li>
+          <li><a class="whitespace-nowrap" href="#">About Us</a></li>
+          <li><a class="whitespace-nowrap" href="#">Contact Us</a></li>
         </ul>
         <div class="footer-social-media">
           <a href="#">
