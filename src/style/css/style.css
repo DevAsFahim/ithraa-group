@@ -1280,6 +1280,32 @@ a {
     height: auto;
 }
 
+.single-package-slider .slick-prev {
+    left: 20px;
+}
+.single-package-slider .slick-next {
+    right: 20px;
+}
+.single-package-slider .slick-arrow {
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    border: 1px solid orange;
+    z-index: 100;
+}
+.single-package-slider .slick-prev:before,
+.single-package-slider .slick-next:before {
+    font-size: 20px;
+    line-height: 10px;
+    color: orange;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: bold;
+}
+.single-package-slider .slick-arrow:hover {
+    background-color: rgba(214, 201, 201, 0.452);
+ }
+
 
 @media screen and (max-width:555px) {
     .flight-content {
