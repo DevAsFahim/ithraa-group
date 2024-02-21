@@ -341,6 +341,48 @@ a {
     color: #fff;
 }
 
+/* about */
+.spin-animation {
+    animation: anime 40s linear infinite;
+}
+@keyframes anime {
+    from {
+      transform: translateX(-50%) rotate(0deg);
+    }
+    to {
+      transform: translateX(-50%) rotate(360deg);
+    }
+  }
+
+  
+/* recent services */
+.recent-services {
+    background-color: #15191f;
+    display: flex;
+    
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.bg__gradient {
+    inset: 0;
+    background-image: linear-gradient(90deg, #eb3434, #eb5e34, #eb8334, #eba434, #ebcc34, #ebeb34, #c3eb34, #89eb34, #58eb34, #34eb52, #34ebcc, #34d5eb, #34a8eb, #346beb, #3734eb, #7734eb, #a834eb, #eb34c3, #eb3489, #eb3461);
+    filter: blur(500px);
+    border-radius: 100%;
+    background-size: 1000% 100%;
+    
+    animation: gradient 10s infinite ease-out;
+    
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    
+    z-index: 0
+  }
+
+  @keyframes gradient {
+    0%{background-position:0% 50%}
+    100%{background-position:100% 100%}
+  } 
 
 /* service section */
 .service {
@@ -412,6 +454,27 @@ a {
     left: -115px;
     top: -40px;
     z-index: -1;
+}
+
+/* countries we serve */
+.country-flag {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+.country-flag::after{
+    content: "";
+    width: 60px;
+    height: 150%;
+    background: #ffffff69;
+    position: absolute;
+    top: 0;
+    right: 150%;
+    transform: skew(-45deg);
+    transition: all .6s;
+}
+.country-flag:hover::after  {
+    right: -60%;
 }
 
 
@@ -1041,7 +1104,6 @@ a {
 }
 
 .action h5 {
-    font-size: 28px;
     font-weight: bold;
     color: rgb(255, 145, 0);
 }
@@ -1117,7 +1179,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 
 .flight-top p {
@@ -1133,19 +1195,14 @@ a {
 }
 
 .flight-content {
-    border: 1px solid #e1dddd;
-    border-radius: 10px;
-    background-color: #faf8f4;
     display: flex;
     gap: 18px;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
 }
 
 .flight-content .flight-name {
     display: flex;
-    flex-direction: column;
     align-items: center;
 }
 
@@ -1160,26 +1217,26 @@ a {
 }
 
 .flight-time {
-    text-align: center;
+    /* text-align: center; */
 }
 
 .flight-time h5 {
-    font-size: 18px;
-    font-weight: bold;
-    color: #111;
+    font-size: 16px;
+    font-weight: 600;
+    color: #222;
     margin-bottom: 0px;
 }
 
 .flight-time p {
-    font-size: 14px;
-    font-weight: bold;
-    color: #111;
+    font-size: 12px;
+    font-weight: 600;
+    color: #222;
     margin-bottom: 0;
 }
 
 .flight-time span {
     color: #6b6969;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 10px;
 }
 
@@ -1187,7 +1244,6 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 12px;
 }
 
 .flight-duration span {
@@ -1202,12 +1258,12 @@ a {
 }
 
 .flight-divider span {
-    color: #fff;
+    color: #222;
     font-weight: bold;
     font-size: 14px;
     padding: 4px 15px;
     border-radius: 4px;
-    background-color: #CC9C3D;
+    background-color: #fff;
 }
 
 .single-page .booking-card {
@@ -1316,3 +1372,4 @@ a {
 
 /* booking end */
 /* ---------------------- */
+
