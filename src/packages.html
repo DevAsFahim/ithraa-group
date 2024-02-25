@@ -7,6 +7,8 @@
   <title>Ithraa Group</title>
   <link rel="stylesheet" href="style/css/style.css">
   <!-- <link rel="stylesheet" href="style/bootstrap/bootstrap.min.css"> -->
+  <link rel="stylesheet" type="text/css" href="./javascript/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="./javascript/slick/slick-theme.css" />
   <link href="output.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/d5436f6dc1.js" crossorigin="anonymous"></script>
 </head>
@@ -45,21 +47,32 @@
     </div>
 
     <div
-      class="py-[15px] px-[30px] md:rounded-[12px] border-b border-b-[#2c2a2a] md:border-none z-10 md:absolute md:top-[50px] md:left-1/2 md:-translate-x-1/2 w-full bg-[#16191d] text-[#e5a770] flex justify-between items-center max-w-[1100px] mx-auto">
+      class="py-[15px] px-[18px] md:rounded-[12px] border-b border-b-[#2c2a2a] md:border-none z-10 md:absolute md:top-[50px] md:left-1/2 md:-translate-x-1/2 w-full bg-[#16191d] text-[#e5a770] flex justify-between items-center max-w-[1100px] mx-auto">
       <div class="logo">
         <a href="index.html"><img class="w-[100px] md:w-[150px] h-[50px] object-cover" src="../image/logo.png"
             alt=""></a>
       </div>
-      <div class="md:hidden">
+      <div class="lg:hidden">
         <i id="nav-show" class="fa-solid fa-bars text-[20px]"></i>
         <i style="display: none;" id="nav-hide" class="fa-solid fa-xmark text-[20px]"></i>
       </div>
-      <ul class="text-[#e5a770] hidden md:flex items-center gap-4">
-        <li><a class="font-medium text-[16px] hover:text-[#f7caa2]" href="./packages.html">Packages</a></li>
-        <li><a class="font-medium text-[16px] hover:text-[#f7caa2]" href="./about.html">About Us</a></li>
-        <li><a class="font-medium text-[16px] hover:text-[#f7caa2]" href="./services.html">Services</a></li>
-        <li><a class="font-medium text-[16px] hover:text-[#f7caa2]" href="./contact.html">Contact Us</a></li>
+      <ul class="text-[#e5a770] hidden lg:flex items-center gap-6">
+        <li><a class="font-medium text-sm hover:text-[#f7caa2]" href="./packages.html">Packages</a></li>
+        <li><a class="font-medium text-sm hover:text-[#f7caa2]" href="./strategic-partners.html">Strategic Partners</a>
+        </li>
+        <li><a class="font-medium text-sm hover:text-[#f7caa2]" href="./about.html">About Us</a></li>
+        <li><a class="font-medium text-sm hover:text-[#f7caa2]" href="./services.html">Services</a></li>
+        <li><a class="font-medium text-sm hover:text-[#f7caa2]" href="./contact.html">Contact Us</a></li>
       </ul>
+
+      <div class="hidden lg:flex">
+        <a href="./guide-login.html"
+          class="px-4 py-2 text-sm text-white hover:text-[#e5a770] transition-all duration-500 mr-2">Guide
+          login</a>
+        <a href="./agent-login.html"
+          class="px-4 py-2 text-sm rounded-lg border border-[#e5a770] text-white bg-[#e5a770] hover:bg-transparent hover:text-[#e5a770] transition-all duration-500 mr-2">Agent
+          login</a>
+      </div>
 
     </div>
 
@@ -72,8 +85,32 @@
           href="./services.html">Services</a></li>
       <li><a class="rounded-sm block mb-3 py-1 px-2 hover:bg-[#e5a770] hover:text-white font-medium text-[16px]"
           href="./contact.html">Contact Us</a></li>
+
+      <div class="w-full flex justify-between pt-10">
+        <a href="./guide-login.html" class="block text-center flex-1 px-4 py-2 text-sm border border-[#e5a770] rounded-lg
+        bg-transparent hover:text-white text-[#e5a770] hover:bg-[#e5a770] transition-all duration-500 mr-2">Guide
+          login</a>
+        <a href="./agent-login.html"
+          class="block text-center flex-1 px-4 py-2 text-sm rounded-lg border border-[#e5a770] text-white bg-[#e5a770] hover:bg-transparent hover:text-[#e5a770] transition-all duration-500 mr-2">Agent
+          login</a>
+      </div>
     </ul>
   </header>
+
+  <section class="h-[300px] overflow-hidden w-full -z-10 relative">
+    <div
+      class="absolute inset-0 lg:bottom-0 w-full bg-[#000000ab] z-10 flex items-center justify-center h-full max-h-full">
+      <h1 class="text-[#E5A770] text-[50px] font-bold">Keep In Touch</h1>
+    </div>
+    <div class="packages-slider mit-h-full">
+      <div class="min-h-[50vh]"><img class="h-full w-full object-cover min-h-[50vh]" src="../image/package-slider-1.jpg"
+          alt=""></div>
+      <div class="min-h-[50vh]"><img class="h-full min-w-[120vw] object-cover min-h-[50vh]"
+          src="../image/package-slider-2.jpg" alt=""></div>
+      <div class="min-h-[50vh]"><img class="h-full w-full object-cover min-h-[50vh]" src="../image/contact-slider-3.jpg"
+          alt=""></div>
+    </div>
+  </section>
 
   <div class="booking">
     <div class="max-w-[1320px] mx-auto bg-[#F1F1F1] py-5 min-h-screen pt-20 lg:px-8">
@@ -91,7 +128,7 @@
                 <div class="col-span-8 flex justify-between flex-col lg:h-full p-4 lg:p-0 lg:mb-0 mb-3">
                   <div class="card-content mb-3">
                     <div class="flex gap-4 items-center">
-                      <h4><a href="single-page.html">Al-Ma'aisem Camp</a></h4>
+                      <h4><a href="./single-package.html">Al-Ma'aisem Camp</a></h4>
                     </div>
                     <div>
                       <i class="fa-solid fa-location-dot text-[#e5a770]"></i>
@@ -100,9 +137,11 @@
                     </div>
 
                     <div class="mt-3">
-                      <p class="m-0 mr-3 text-[#171616] text-xs">Located in Jedda, 1.5 miles from Saudi University of Textiles, This hotel has accommodations with a fitness center, free private parking, a garden and a shared lounge.</p>
+                      <p class="m-0 mr-3 text-[#171616] text-xs">Located in Jedda, 1.5 miles from Saudi University of
+                        Textiles, This hotel has accommodations with a fitness center, free private parking, a garden
+                        and a shared lounge.</p>
                     </div>
-                    
+
                     <h5 class="text-sm font-semibold text-[#222] mt-3 mb-2">Popular facilities</h5>
                     <div class=" flex items-center flex-wrap gap-3">
                       <div class="flex items-center gap-1.5 ">
@@ -139,7 +178,8 @@
                   </div>
 
                 </div>
-                <div class="booking-card-actions col-span-4 text-end flex flex-col justify-between lg:p-0 p-4 gap-3 border-t lg:border-t-0 lg:border-l border-[#ece9e9]">
+                <div
+                  class="booking-card-actions col-span-4 text-end flex flex-col justify-between lg:p-0 p-4 gap-3 border-t lg:border-t-0 lg:border-l border-[#ece9e9]">
                   <div class="ratings action">
                     <div class="text-orange-400 mb-2">
                       <i class="fa-solid fa-star"></i>
@@ -150,7 +190,8 @@
                     </div>
                     <h5 class="text-[28px] lg:text-[35px]">$500 <sub>/ Night</sub></h5>
                   </div>
-                    <a href="single-package.html" class="btn-default mb-0 bg-[#e5a770] text-center lg:ml-3">View Details</a>
+                  <a href="./single-package.html" class="btn-default mb-0 bg-[#e5a770] text-center lg:ml-3">View
+                    Details</a>
                 </div>
               </div>
             </div>
@@ -236,10 +277,11 @@
           <img class="w-[250px] h-[80px] object-cover" src="../image/logo.png" alt="image">
         </div>
         <ul class="footer-links">
-          <li><a class="whitespace-nowrap" href="#">Umrah 2024</a></li>
-          <li><a class="whitespace-nowrap" href="#">Hajj 2024</a></li>
-          <li><a class="whitespace-nowrap" href="#">About Us</a></li>
-          <li><a class="whitespace-nowrap" href="#">Contact Us</a></li>
+          <li><a class="whitespace-nowrap" href="./packages.html">Packages</a></li>
+          <li><a class="whitespace-nowrap" href="./strategic-partners.html">Strategic Partners</a></li>
+          <li><a class="whitespace-nowrap" href="./services.html">Services</a></li>
+          <li><a class="whitespace-nowrap" href="./about.html">About Us</a></li>
+          <li><a class="whitespace-nowrap" href="./contact.html">Contact Us</a></li>
         </ul>
         <div class="footer-social-media">
           <a href="#">
@@ -320,10 +362,25 @@
     </div>
   </footer>
 
+  <!-- <script src="javascript/bootstrap/bootstrap.bundle.min.js"></script> -->
   <script src="./javascript/app.js"></script>
   <script src="./javascript/jquery.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="./javascript/slick/slick.min.js"></script>
 
   <script>
+
+    $(document).ready(function () {
+      $('.packages-slider').slick({
+        autoplay: true,
+        infinite: true,
+        speed: 500,
+        cssEase: 'linear',
+        arrows: false,
+      });
+    });
+
 
     const langArray = [];
 
