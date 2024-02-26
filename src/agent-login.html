@@ -12,132 +12,178 @@
 </head>
 
 <style>
-    
+  input,
+  textarea,
+  select,
+  button {
+    font-family: "Poppins-Regular";
+    color: #333;
+    font-size: 13px;
+  }
 
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  ul {
+    margin: 0;
+  }
 
-input, textarea, select, button {
-  font-family: "Poppins-Regular";
-  color: #333;
-  font-size: 13px; }
+  img {
+    max-width: 100%;
+  }
 
-p, h1, h2, h3, h4, h5, h6, ul {
-  margin: 0; }
+  ul {
+    padding-left: 0;
+    margin-bottom: 0;
+  }
 
-img {
-  max-width: 100%; }
+  a:hover {
+    text-decoration: none;
+  }
 
-ul {
-  padding-left: 0;
-  margin-bottom: 0; }
+  :focus {
+    outline: none;
+  }
 
-a:hover {
-  text-decoration: none; }
+  .wrapper {
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.658), rgba(0, 0, 0, 0.685)), url('../image/h-slider-1.jpg');
+  }
 
-:focus {
-  outline: none; }
+  .inner {
+    padding: 20px;
+    background: #fff;
+    max-width: 850px;
+    margin: auto;
+    display: flex;
+  }
 
-.wrapper {
-  min-height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center; 
-  background-image: linear-gradient(rgba(0, 0, 0, 0.658), rgba(0, 0, 0, 0.685)), url('../image/h-slider-1.jpg');
-}
-
-.inner {
-  padding: 20px;
-  background: #fff;
-  max-width: 850px;
-  margin: auto;
-  display: flex; }
   .inner .image-holder {
-    width: 50%; }
+    width: 50%;
+  }
+
   .inner form {
     width: 50%;
     padding-top: 36px;
     padding-left: 45px;
-    padding-right: 45px; }
+    padding-right: 45px;
+  }
+
   .inner h3 {
     text-transform: uppercase;
     font-size: 25px;
     font-family: "Poppins-SemiBold";
     text-align: center;
-    margin-bottom: 28px; }
+    margin-bottom: 28px;
+  }
 
-.form-group {
-  display: flex; }
+  .form-group {
+    display: flex;
+  }
+
   .form-group input {
-    width: 50%; }
-    .form-group input:first-child {
-      margin-right: 25px; }
+    width: 50%;
+  }
 
-.form-wrapper {
-  position: relative; }
+  .form-group input:first-child {
+    margin-right: 25px;
+  }
+
+  .form-wrapper {
+    position: relative;
+  }
+
   .form-wrapper i {
     position: absolute;
     bottom: 9px;
-    right: 0; }
+    right: 0;
+  }
 
-.form-control {
-  border: 1px solid #333;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-  display: block;
-  width: 100%;
-  height: 30px;
-  padding: 0;
-  margin-bottom: 25px; }
+  .form-control {
+    border: 1px solid #333;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    display: block;
+    width: 100%;
+    height: 30px;
+    padding: 0;
+    margin-bottom: 25px;
+  }
+
   .form-control::-webkit-input-placeholder {
     font-size: 13px;
     color: #333;
-    font-family: "Poppins-Regular"; }
+    font-family: "Poppins-Regular";
+  }
+
   .form-control::-moz-placeholder {
     font-size: 13px;
     color: #333;
-    font-family: "Poppins-Regular"; }
+    font-family: "Poppins-Regular";
+  }
+
   .form-control:-ms-input-placeholder {
     font-size: 13px;
     color: #333;
-    font-family: "Poppins-Regular"; }
+    font-family: "Poppins-Regular";
+  }
+
   .form-control:-moz-placeholder {
     font-size: 13px;
     color: #333;
-    font-family: "Poppins-Regular"; }
+    font-family: "Poppins-Regular";
+  }
 
-select {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  cursor: pointer;
-  padding-left: 20px; }
+  select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    padding-left: 20px;
+  }
+
   select option[value=""][disabled] {
-    display: none; }
+    display: none;
+  }
 
-.wrapper button {
-  border: none;
-  width: 164px;
-  height: 51px;
-  margin: auto;
-  margin-top: 40px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  background: #333;
-  font-size: 15px;
-  color: #fff;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s; }
+  .wrapper button {
+    border: none;
+    width: 164px;
+    height: 51px;
+    margin: auto;
+    margin-top: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background: #333;
+    font-size: 15px;
+    color: #fff;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+  }
+
   button i {
     margin-left: 10px;
     -webkit-transform: translateZ(0);
-    transform: translateZ(0); }
-  button:hover i, button:focus i, button:active i {
+    transform: translateZ(0);
+  }
+
+  button:hover i,
+  button:focus i,
+  button:active i {
     -webkit-animation-name: hvr-icon-wobble-horizontal;
     animation-name: hvr-icon-wobble-horizontal;
     -webkit-animation-duration: 1s;
@@ -145,68 +191,107 @@ select {
     -webkit-animation-timing-function: ease-in-out;
     animation-timing-function: ease-in-out;
     -webkit-animation-iteration-count: 1;
-    animation-iteration-count: 1; }
+    animation-iteration-count: 1;
+  }
 
-@-webkit-keyframes hvr-icon-wobble-horizontal {
-  16.65% {
-    -webkit-transform: translateX(6px);
-    transform: translateX(6px); }
-  33.3% {
-    -webkit-transform: translateX(-5px);
-    transform: translateX(-5px); }
-  49.95% {
-    -webkit-transform: translateX(4px);
-    transform: translateX(4px); }
-  66.6% {
-    -webkit-transform: translateX(-2px);
-    transform: translateX(-2px); }
-  83.25% {
-    -webkit-transform: translateX(1px);
-    transform: translateX(1px); }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0); } }
-@keyframes hvr-icon-wobble-horizontal {
-  16.65% {
-    -webkit-transform: translateX(6px);
-    transform: translateX(6px); }
-  33.3% {
-    -webkit-transform: translateX(-5px);
-    transform: translateX(-5px); }
-  49.95% {
-    -webkit-transform: translateX(4px);
-    transform: translateX(4px); }
-  66.6% {
-    -webkit-transform: translateX(-2px);
-    transform: translateX(-2px); }
-  83.25% {
-    -webkit-transform: translateX(1px);
-    transform: translateX(1px); }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0); } }
-@media (max-width: 1199px) {
-  .wrapper {
-    background-position: right center; } }
-@media (max-width: 991px) {
-  .inner form {
-    padding-top: 10px;
-    padding-left: 30px;
-    padding-right: 30px; } }
-@media (max-width: 767px) {
-  .inner {
-    display: block; }
+  @-webkit-keyframes hvr-icon-wobble-horizontal {
+    16.65% {
+      -webkit-transform: translateX(6px);
+      transform: translateX(6px);
+    }
+
+    33.3% {
+      -webkit-transform: translateX(-5px);
+      transform: translateX(-5px);
+    }
+
+    49.95% {
+      -webkit-transform: translateX(4px);
+      transform: translateX(4px);
+    }
+
+    66.6% {
+      -webkit-transform: translateX(-2px);
+      transform: translateX(-2px);
+    }
+
+    83.25% {
+      -webkit-transform: translateX(1px);
+      transform: translateX(1px);
+    }
+
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes hvr-icon-wobble-horizontal {
+    16.65% {
+      -webkit-transform: translateX(6px);
+      transform: translateX(6px);
+    }
+
+    33.3% {
+      -webkit-transform: translateX(-5px);
+      transform: translateX(-5px);
+    }
+
+    49.95% {
+      -webkit-transform: translateX(4px);
+      transform: translateX(4px);
+    }
+
+    66.6% {
+      -webkit-transform: translateX(-2px);
+      transform: translateX(-2px);
+    }
+
+    83.25% {
+      -webkit-transform: translateX(1px);
+      transform: translateX(1px);
+    }
+
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+
+  @media (max-width: 1199px) {
+    .wrapper {
+      background-position: right center;
+    }
+  }
+
+  @media (max-width: 991px) {
+    .inner form {
+      padding-top: 10px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .inner {
+      display: block;
+    }
+
     .inner .image-holder {
-      width: 100%; }
+      width: 100%;
+    }
+
     .inner form {
       width: 100%;
-      padding: 40px 0 30px; }
+      padding: 40px 0 30px;
+    }
 
-  button {
-    margin-top: 60px; } }
+    button {
+      margin-top: 60px;
+    }
+  }
 
-/*# sourceMappingURL=style.css.map */
-
+  /*# sourceMappingURL=style.css.map */
 </style>
 
 
@@ -244,24 +329,25 @@ select {
     </div>
 
     <div
-      class="py-[15px] px-[30px] md:rounded-[12px] border-b border-b-[#2c2a2a] md:border-none z-10 md:absolute md:top-[50px] md:left-1/2 md:-translate-x-1/2 w-full bg-[#16191d] text-[#e5a770] flex justify-between items-center max-w-[1100px] mx-auto">
+      class="py-[15px] px-[18px] md:rounded-[12px] border-b border-b-[#2c2a2a] md:border-none z-10 md:absolute md:top-[50px] md:left-1/2 md:-translate-x-1/2 w-full bg-[#16191d] text-[#e5a770] flex justify-between items-center max-w-[1100px] mx-auto">
       <div class="logo">
-        <a href="index.html"><img class="w-[100px] md:w-[150px] h-[50px] object-cover" src="../image/logo.png"
+        <a href="index.html"><img class="w-[100px] md:w-[120px] h-[50px] object-cover" src="../image/logo.png"
             alt=""></a>
       </div>
-      <div class="md:hidden">
+      <div class="lg:hidden">
         <i id="nav-show" class="fa-solid fa-bars text-[20px]"></i>
         <i style="display: none;" id="nav-hide" class="fa-solid fa-xmark text-[20px]"></i>
       </div>
-      <ul class="text-[#e5a770] hidden md:flex items-center gap-6">
+      <ul class="text-[#e5a770] hidden lg:flex items-center gap-6">
         <li><a class="font-medium text-sm hover:text-[#f7caa2]" href="./packages.html">Packages</a></li>
-        <li><a class="font-medium text-sm hover:text-[#f7caa2]" href="./strategic-partners.html">Strategic Partners</a></li>
         <li><a class="font-medium text-sm hover:text-[#f7caa2]" href="./about.html">About Us</a></li>
         <li><a class="font-medium text-sm hover:text-[#f7caa2]" href="./services.html">Services</a></li>
+        <li><a class="font-medium text-sm hover:text-[#f7caa2]" href="./strategic-partners.html">Strategic Partners</a>
+        </li>
         <li><a class="font-medium text-sm hover:text-[#f7caa2]" href="./contact.html">Contact Us</a></li>
       </ul>
 
-      <div class="hidden md:flex">
+      <div class="hidden lg:flex">
         <a href="./guide-login.html"
           class="px-4 py-2 text-sm text-white hover:text-[#e5a770] transition-all duration-500 mr-2">Guide
           login</a>
@@ -276,11 +362,12 @@ select {
       <li><a class="rounded-sm block mb-3 py-1 px-2 hover:bg-[#e5a770] hover:text-white font-medium text-[16px]"
           href="./packages.html">Packages</a></li>
       <li><a class="rounded-sm block mb-3 py-1 px-2 hover:bg-[#e5a770] hover:text-white font-medium text-[16px]"
-          href="./strategic-partners.html">Strategic Partners</a></li>
-      <li><a class="rounded-sm block mb-3 py-1 px-2 hover:bg-[#e5a770] hover:text-white font-medium text-[16px]"
           href="./about.html">About Us</a></li>
       <li><a class="rounded-sm block mb-3 py-1 px-2 hover:bg-[#e5a770] hover:text-white font-medium text-[16px]"
           href="./services.html">Services</a></li>
+      <li><a class="rounded-sm block mb-3 py-1 px-2 hover:bg-[#e5a770] hover:text-white font-medium text-[16px]"
+          href="./strategic-partners.html">Strategic Partners</a></li>
+      </li>
       <li><a class="rounded-sm block mb-3 py-1 px-2 hover:bg-[#e5a770] hover:text-white font-medium text-[16px]"
           href="./contact.html">Contact Us</a></li>
 
@@ -298,27 +385,27 @@ select {
 
   <div class="wrapper pt-20 pb-5 bg-gradient-to-r from-cyan-500 to-blue-500 px-3">
     <div class="inner items-center">
-        <div class="image-holder">
-            <img class="w-full h-full" src="../image/login-img.jpg" alt="">
+      <div class="image-holder">
+        <img class="w-full h-full" src="../image/login-img.jpg" alt="">
+      </div>
+      <form action="" class="">
+        <h3>Welcome Back!</h3>
+        <div class="form-wrapper">
+          <input type="text" placeholder="Email Address" class="form-control">
+          <i class="zmdi zmdi-email"></i>
         </div>
-        <form action="" class="">
-            <h3>Welcome Back!</h3>
-            <div class="form-wrapper">
-                <input type="text" placeholder="Email Address" class="form-control">
-                <i class="zmdi zmdi-email"></i>
-            </div>
-            <div class="form-wrapper">
-                <input type="password" placeholder="Password" class="form-control">
-                <i class="zmdi zmdi-lock"></i>
-            </div>
-            <button class="rounded-full py-3 px-5 ">Agent Login</button>
-        </form>
+        <div class="form-wrapper">
+          <input type="password" placeholder="Password" class="form-control">
+          <i class="zmdi zmdi-lock"></i>
+        </div>
+        <button class="rounded-full py-3 px-5 ">Agent Login</button>
+      </form>
     </div>
-</div>
+  </div>
 
   <!-- <div class="pt-[100px] flex bg-[url('../image/login-shape-1.png')] bg-no-repeat bg-cover min-h-screen">
 </div> -->
-<!-- <img src="../image/login-shape-1.png" alt=""> -->
+  <!-- <img src="../image/login-shape-1.png" alt=""> -->
 
   <footer class="footer bg-[#16191d]">
     <div class="footer-top">
