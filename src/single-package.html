@@ -1,0 +1,713 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ithraa Group</title>
+    <link rel="stylesheet" href="style/css/style.css">
+    <!-- <link rel="stylesheet" href="style/bootstrap/bootstrap.min.css"> -->
+    <link href="output.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./javascript/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./javascript/slick/slick-theme.css" />
+    <script src="https://kit.fontawesome.com/d5436f6dc1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="relative z-20">
+        <div class="bg-[#e5a770] lg:pb-11 p-2 text-white ">
+          <div class="max-w-[1100px] mx-auto flex justify-between items-center">
+            <div class="flex gap-3 items-center text-sm">
+              <span>Follow Us: </span>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <div>
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:123-456-7890">123-456-7890</a>
+              </div>
+            </div>
+    
+            <div class="default-selector parent text-black">
+              <select class="select ">
+                <option value="en" data-thumbnail="../image/us-flag.png">
+                  English
+                </option>
+                <option value="cn" data-thumbnail="../image/saudi-flag.png">
+                  Arabic
+                </option>
+              </select>
+              <div class="lang-select">
+                <button class="btn-select" value=""></button>
+                <div class="b">
+                  <ul id="a"></ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div
+          class="py-[15px] px-[18px] lg:rounded-[12px] border-b border-b-[#2c2a2a] lg:border-none z-10 lg:absolute lg:top-[50px] lg:left-1/2 lg:-translate-x-1/2 w-full bg-[#16191d] text-[#e5a770] flex justify-between items-center max-w-[1100px] mx-auto">
+          <div class="logo">
+           <a href="index.html"><img class="w-[100px] md:w-[140px] h-[50px]" src="../image/logo.png"
+                alt=""></a>
+          </div>
+          <div class="lg:hidden">
+            <i id="nav-show" class="fa-solid fa-bars text-[20px]"></i>
+            <i style="display: none;" id="nav-hide" class="fa-solid fa-xmark text-[20px]"></i>
+          </div>
+          <ul class="text-[#e5a770] hidden lg:flex items-center gap-6">
+            <li><a class="font-medium text-sm hover:text-[#f7caa2]" href="./packages.html">Packages</a></li>
+            <li><a class="font-medium text-sm hover:text-[#f7caa2]" href="./about.html">About Us</a></li>
+            <li><a class="font-medium text-sm hover:text-[#f7caa2]" href="./services.html">Services</a></li>
+            <li><a class="font-medium text-sm hover:text-[#f7caa2]" href="./strategic-partners.html">Strategic Partners</a>
+            </li>
+            <li><a class="font-medium text-sm hover:text-[#f7caa2]" href="./contact.html">Contact Us</a></li>
+          </ul>
+    
+          <div class="hidden lg:flex">
+            <a href="./guide-login.html"
+              class="px-4 py-2 text-sm text-white hover:text-[#e5a770] transition-all duration-500 mr-2">Guide
+              login</a>
+            <a href="./agent-login.html"
+              class="px-4 py-2 text-sm rounded-lg border border-[#e5a770] text-white bg-[#e5a770] hover:bg-transparent hover:text-[#e5a770] transition-all duration-500 mr-2">Agent
+              login</a>
+          </div>
+    
+        </div>
+    
+        <ul id="mobile-menu" class="min-h-screen bg-[#16191d] text-[#e5a770] hidden p-5">
+          <li><a class="rounded-sm block mb-3 py-1 px-2 hover:bg-[#e5a770] hover:text-white font-medium text-[16px]"
+              href="./packages.html">Packages</a></li>
+          <li><a class="rounded-sm block mb-3 py-1 px-2 hover:bg-[#e5a770] hover:text-white font-medium text-[16px]"
+              href="./about.html">About Us</a></li>
+          <li><a class="rounded-sm block mb-3 py-1 px-2 hover:bg-[#e5a770] hover:text-white font-medium text-[16px]"
+              href="./services.html">Services</a></li>
+          <li><a class="rounded-sm block mb-3 py-1 px-2 hover:bg-[#e5a770] hover:text-white font-medium text-[16px]"
+              href="./strategic-partners.html">Strategic Partners</a></li>
+              </li>
+          <li><a class="rounded-sm block mb-3 py-1 px-2 hover:bg-[#e5a770] hover:text-white font-medium text-[16px]"
+              href="./contact.html">Contact Us</a></li>
+    
+          <div class="w-full flex justify-between pt-10">
+            <a href="./guide-login.html" class="block text-center flex-1 px-4 py-2 text-sm border border-[#e5a770] rounded-lg
+            bg-transparent hover:text-white text-[#e5a770] hover:bg-[#e5a770] transition-all duration-500 mr-2">Guide
+              login</a>
+            <a href="./agent-login.html"
+              class="block text-center flex-1 px-4 py-2 text-sm rounded-lg border border-[#e5a770] text-white bg-[#e5a770] hover:bg-transparent hover:text-[#e5a770] transition-all duration-500 mr-2">Agent
+              login</a>
+          </div>
+        </ul>
+      </header>
+
+    <!-- <section class="min-h-[50vh] px-5 py-[100px] bg-[url('../image/single-page-bg.jpg')] bg-cover">
+        <h class="text-[40px] lg:text-[55px] text-center max-w-[550px] block mx-auto font-bold text-white">
+            Solution for The Hajj and Umrah
+        </h>
+    </section> -->
+
+
+    <section class="h-[300px] overflow-hidden w-full -z-10 relative">
+        <div
+            class="absolute inset-0 lg:bottom-0 w-full bg-[#000000ab] z-10 flex items-center justify-center h-full max-h-full">
+            <!-- <h1 class="text-[#E5A770] text-[50px] font-bold">Keep In Touch</h1> -->
+            <h class="text-[40px] lg:text-[55px] text-center max-w-[550px] block mx-auto font-bold text-[#E5A770]">
+                Solution for The Hajj and Umrah
+            </h>
+        </div>
+        <div class="packages-slider-2 mit-h-full">
+            <div class="min-h-[50vh]"><img class="h-full w-full object-cover min-h-[50vh]"
+                    src="../image/package-slider-1.jpg" alt=""></div>
+            <div class="min-h-[50vh]"><img class="h-full min-w-[120vw] object-cover min-h-[50vh]"
+                    src="../image/package-slider-2.jpg" alt=""></div>
+            <div class="min-h-[50vh]"><img class="h-full w-full object-cover min-h-[50vh]"
+                    src="../image/contact-slider-3.jpg" alt=""></div>
+        </div>
+    </section>
+
+    <div class="single-page px-3 bg-white">
+        <div class="max-w-[1140px] mx-auto py-5 pt-16 grid grid-cols-1 md:grid-cols-12 gap-10 relative items-start">
+
+            <div class="md:col-span-8">
+                <div class="single-product-head mb-4">
+                    <div class="flex justify-between">
+                        <div class="text-orange-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <!-- <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i> -->
+                        </div>
+                        <img src="https://ithraa.group/countryflags/GB.png" class="max-w-[50px] object-contain w-[50px]" alt="">
+                    </div>
+                    <h4>Silver Hospitality Package (Al-Ma'aisem Camp)</h4>
+                    <p>Mina Road, Bur Dubai, Dubai, United Arab Emirates</p>
+                    <div class="tags">
+                        <span>Free wifi</span>
+                        <span>Free breakfast</span>
+                    </div>
+                </div>
+
+                <div class="single-package-slider mit-h-full">
+                    <div class="h-[40vh]"><img class="w-full object-cover lg:h-[70vh]" src="../image/hotel.webp" alt="">
+                    </div>
+                    <div class="h-[40vh]"><img class="w-full object-cover lg:h-[70vh]" src="../image/h-slider-4.jpg"
+                            alt=""></div>
+                    <div class="h-[40vh]"><img class="w-full object-cover lg:h-[70vh]" src="../image/h-slider-3.jpg"
+                            alt=""></div>
+                    <div class="h-[40vh]"><img class="w-full object-cover lg:h-[70vh]" src="../image/h-slider-2.jpg"
+                            alt=""></div>
+                </div>
+
+                <!-- <div class="single-product-wrapper mb-4">
+                    <h5>Transportation</h5>
+
+                    <div class="grid md:grid-cols-12 grid-cols-1 gap-4">
+                        <div class="md:col-span-4">
+                            <img class="h-full w-full object-cover" src="../image/transport.jpg" alt="">
+                        </div>
+                        <div class="md:col-span-8">
+                            <p class="text-sm mb-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem,
+                                dolor harum! Vel dolorem sunt tempore laudantium itaque consectetur quam, et assumenda!
+                                Sint rerum fugit velit obcaecati nulla adipisci quae soluta.</p>
+                            <p class="text-sm mb-2">Lorem ipsum d et assumenda! Sint rerum fugit velit obcaecati nulla
+                                adipisci quae soluta.</p>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="single-product-wrapper mb-4">
+                    <h5>Flight</h5>
+                    <div class="flight-top border-none px-4 py-2 rounded-md bg-[#f7f1d6]">
+                        <p><i class="fa-solid fa-jet-fighter-up"></i> London -> Dhaka</p>
+                        <p><i class="fa-solid fa-stopwatch"></i> Duration: 30h 10m</p>
+                        <p><i class="fa-regular fa-circle-stop"></i> 1 Stop</p>
+                    </div>
+
+                    <div class="flight-content">
+                        <div class="flight-name gap-4 flex-wrap">
+                            <img src="../image/qatar-airlign.png" alt="uk">
+                            <div class="whitespace-nowrap">
+                                <p class="font-semibold leading-3 text-sm">Qatar airway</p>
+                                <span class="leading-3">Fl07833479j</span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-5">
+                            <div class="flight-time whitespace-nowrap">
+                                <h5>LA</h5>
+                                <p>11:05 AM</p>
+                                <span>Sat 5 May 2023</span>
+                            </div>
+
+                            <div class="flight-duration flex-col">
+                                <div class="max-w-[300px]">
+                                    <img class="max-w-full object-contain" src="../image/flight.png" alt="">
+                                </div>
+                                <span class="-mt-4">7h 20m</span>
+
+                                <!-- <i class="fa-solid fa-plane-departure"></i>
+                                <span>------ 7h 20m ------</span>
+                                <i class="fa-solid fa-plane-arrival"></i> -->
+                            </div>
+
+                            <div class="flight-time whitespace-nowrap">
+                                <h5>NY</h5>
+                                <p>11:05 PM</p>
+                                <span>Sat 5 May 2023</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flight-divider relative py-8">
+                        <hr class="border-b border-b-orange-400">
+                        <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">2h 20m</span>
+                    </div>
+
+                    <div class="flight-content">
+                        <div class="flight-name gap-4 flex-wrap">
+                            <img src="../image/qatar-airlign.png" alt="uk">
+                            <div class="whitespace-nowrap">
+                                <p class="font-semibold leading-3 text-sm">Qatar airway</p>
+                                <span class="leading-3">Fl07833479j</span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-5">
+                            <div class="flight-time whitespace-nowrap">
+                                <h5>LA</h5>
+                                <p>11:05 AM</p>
+                                <span>Sat 5 May 2023</span>
+                            </div>
+
+                            <div class="flight-duration flex-col">
+                                <div class="max-w-[300px]">
+                                    <img class="max-w-full object-contain" src="../image/flight.png" alt="">
+                                </div>
+                                <span class="-mt-4">7h 20m</span>
+
+                                <!-- <i class="fa-solid fa-plane-departure"></i>
+                                <span>------ 7h 20m ------</span>
+                                <i class="fa-solid fa-plane-arrival"></i> -->
+                            </div>
+
+                            <div class="flight-time whitespace-nowrap">
+                                <h5>NY</h5>
+                                <p>11:05 PM</p>
+                                <span>Sat 5 May 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="single-product-wrapper mb-4">
+                    <h5>Hotel</h5>
+
+                    <div class="booking-card p-3 relative">
+
+                        <div class="absolute top-0 right-0 px-6 py-2 bg-orange-400 rounded-bl-[15px]">
+                            <h2 style="margin: 0;" class="text-white font-bold text-[20px]">$500 <sub
+                                    class="text-[12px] text-[#eee9e9] font-normal">/ Night</sub></h2>
+                        </div>
+
+                        <div class="grid grid-cols-1">
+                            <div class="col-span-4">
+                                <div class="booking-card-image h-full w-full">
+                                    <img class="h-full w-full object-cover rounded-md" src="../image/hotel.webp"
+                                        alt="booking card image">
+                                </div>
+                            </div>
+                            <div class="col-span-8 p-3">
+                                <div class="grid grid-cols-1 h-full">
+                                    <div class="col-span-8 flex justify-between flex-col p-4 mb-3">
+                                        <div class="card-content mb-3">
+                                            <div class="flex gap-4 items-center">
+                                                <h4><a href="single-page.html">Al-Ma'aisem Camp</a></h4>
+                                                <div class="text-orange-400">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <!-- <i class="fa-solid fa-star-half-stroke"></i>
+                                      <i class="fa-regular fa-star"></i> -->
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-location-dot text-[#e5a770]"></i>
+                                                <span class="text-[15px] text-[#b8a18e] ml-1">0123 Rock Street, 21
+                                                    Avenue, Saudi
+                                                    Arabia</span>
+                                            </div>
+
+                                            <div class="mt-3">
+                                                <p class="m-0 mr-3 text-[#171616] text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, ab. Natus repellat illum a sint saepe voluptates iusto, minus incidunt!</p>
+                                            </div>
+
+                                            <h5 class="text-sm font-semibold text-[#222] mt-3 mb-2">Popular facilities
+                                            </h5>
+                                            <div class=" flex items-center flex-wrap gap-3">
+                                                <div class="flex items-center gap-1.5 ">
+                                                    <i class="fa-solid text-[#e5a770] fa-plane"></i>
+                                                    <span class="text-sm text-[#262626]">Flight</span>
+                                                </div>
+                                                <div class="flex items-center gap-1.5">
+                                                    <!-- <i class="fa-solid fa-hotel"></i> -->
+                                                    <i class="fa-solid text-[#e5a770] fa-star"></i>
+                                                    <span class="text-sm text-[#262626]">3 Star Hotel</span>
+                                                </div>
+                                                <div class="flex items-center gap-1.5">
+                                                    <i class="fa-solid text-[#e5a770] fa-dumbbell"></i>
+                                                    <span class="text-sm text-[#262626]">Fitness center</span>
+                                                </div>
+                                                <div class="flex items-center gap-1.5">
+                                                    <i class="fa-solid text-[#e5a770] fa-utensils"></i>
+                                                    <span class="text-sm text-[#262626]">Catering</span>
+                                                </div>
+                                                <div class="flex items-center gap-1.5">
+                                                    <i class="fa-solid text-[#e5a770] fa-mug-hot"></i>
+                                                    <span class="text-sm text-[#262626]">Good breakfast</span>
+                                                </div>
+                                                <div class="flex items-center gap-1.5">
+                                                    <!-- <i class="fa-solid fa-house"></i> -->
+                                                    <i class="fa-solid text-[#e5a770] fa-truck-plane"></i>
+                                                    <span class="text-sm text-[#262626]">Shuttle</span>
+                                                </div>
+                                                <div class="flex items-center gap-1.5">
+                                                    <i class="fa-solid text-[#e5a770] fa-car"></i>
+                                                    <span class="text-sm text-[#262626]">Transportation</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="single-product-wrapper mb-4">
+                    <h5>Details</h5>
+
+                    <div class="single-details p-3">
+                        <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat culpa voluptatibus ex laudantium eum enim voluptatum deleniti debitis itaque modi, fugit, magni quos explicabo excepturi corrupti, impedit unde optio quo autem commodi aperiam asperiores consectetur soluta! Ipsa illo sunt omnis.</p>
+
+                        <div class="flex justify-between items-start gap-3 flex-wrap mb-4">
+                            <div>
+                                <h4>Inclusion</h4>
+                                <ul class="list-[square]">
+                                    <li>Return Economy Class Airfare With Taxes</li>
+                                    <li>Barcelona To Prague Internal Flight Ticket</li>
+                                    <li>2 Nights Stay With Breakfast At Prague</li>
+                                    <li>2 Nights Stay With Breakfast At Budapest</li>
+                                    <li>1 Night Stay With Breakfast At Vienna</li>
+                                    <li>Normal Visa Charges Of Schengen</li>
+                                    <li>Return</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4>Exclusion</h4>
+                                <ul class="list-[square]">
+                                    <li>Any Extra Sightseeing Which Is Not Mentioned In The Itinerary</li>
+                                    <li>Barcelona To Prague Internal Flight Ticket</li>
+                                    <li>2 Nights Stay With Breakfast At Prague</li>
+                                    <li>2 Nights Stay With Breakfast At Budapest</li>
+                                    <li>1 Night Stay With Breakfast At Vienna</li>
+                                    <li>Normal Visa Charges Of Schengen</li>
+                                    <li>Return</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- <div class="mb-4">
+                            <img src="../image/detail-image.jpg" alt="detail image">
+                        </div> -->
+
+                        <!-- <div class="mb-4">
+                            <h5>A Road Rip Along Spain's Mediterranean Coast</h5>
+                            <p>A road trip along Spain’s Mediterranean coast is a guarantee of sunshine, lovely beaches, and
+                                plenty of destinations with things to see and do. We suggest following the coastline at your
+                                own pace, without a fixed timetable and with room to improvise.We choose Barcelona as a
+                                starting point because it’s a huge transport hub. You might fancy heading north for a couple
+                                of days to see the Costa Brava (Girona): beautiful bays like Roses, coves where the pine
+                                trees grow right to the shoreline, large seaside resorts and the fishing villages that once
+                                inspired Dalí.</p>
+                        </div>
+    
+                        <div class="mb-4">
+                            <h5>The History Of Spain's Great Civilisations</h5>
+                            <p>In Spain, you can get a history lesson while you enjoy your holiday. Let us show you places
+                                to visit where you can discover milestones of human development, like the earliest humans,
+                                the birth of art, and the power of the great civilisations.</p>
+                        </div>
+    
+                        <div class="mb-4">
+                            <h5>Foodies, Prepare To Be Enthused</h5>
+                            <p>From tasty tapas to superb seafood and traditional roasts, food in Spain is all about making
+                                the most of the best local produce.Whether you're on a city break in Barcelona or Madrid, or
+                                you've plumped for a countryside or coastal retreat, Spanish food is full of flavour and
+                                character.</p>
+                        </div> -->
+
+                    </div>
+
+                </div>
+
+                <div class="single-product-wrapper mb-4">
+                    <h5>Itinerary</h5>
+
+                    <div class="acc-container">
+                        <div class="acc-wrapper">
+                            <div class="flex flex-col bg-[#f4f2f2] rounded-md">
+                                <li
+                                    class="accordion-btn flex items-center justify-between gap-5 cursor-pointer py-3 px-4">
+                                    <p class="text-base md:text-[17px] font-medium">Lorem ipsum dolor sit amet,
+                                        consectetur
+                                        adipisicing .</p>
+                                    <i class="fa-solid fa-angle-down text-orange-400 text-2xl "></i>
+                                </li>
+                                <div class="dropdown-wrapper">
+                                    <div class="dropdown-content">
+                                        <p class="py-5 px-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Praesentium inventore repellendus
+                                            provident ex sunt enim quia sequi expedita. Cum ipsa tempora recusandae
+                                            doloribus quia, atque
+                                            mollitia expedita quidem accusantium accusamus necessitatibus dicta fugit
+                                            facilis. Odit?</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col bg-[#f4f2f2] rounded-md">
+                                <li
+                                    class="accordion-btn flex items-center justify-between gap-5 cursor-pointer py-3 px-4">
+                                    <p class="text-base md:text-[17px] font-medium">Lorem ipsum dolor sit amet,
+                                        consectetur.</p>
+                                    <i class="fa-solid fa-angle-down text-orange-400 text-2xl "></i>
+                                </li>
+                                <div class="dropdown-wrapper">
+                                    <div class="dropdown-content">
+                                        <p class="py-5 px-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Praesentium inventore repellendus
+                                            provident ex sunt enim quia sequi expedita. Cum ipsa tempora recusandae
+                                            doloribus quia, atque
+                                            mollitia expedita quidem accusantium accusamus necessitatibus dicta fugit
+                                            facilis. Odit?</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="single-product-wrapper mb-4">
+                    <h5>Policies</h5>
+
+                    <ol>
+                        <li>mua;sjdf</li>
+                        <li>laisjfsadf sdofi</li>
+                    </ol>
+
+                    <div class="single-policies mt-4">
+                        <p>Check-in: 2.00 PM, Check-out: 12.00 PM</p>
+                        <p>The primary guest must be at least 18 years of age to check into this hotel.</p>
+                        <p>It is mandatory for guests to present valid photo identification at the time of check-in.
+                            According to
+                            government regulations, a valid Photo ID has to be carried by every person above the age of
+                            18
+                            staying at
+                            the hotel. The identification proofs accepted are Aadhar Card, Driving License, Voter ID
+                            Card,
+                            and Passport.
+                            Without Original copy of valid ID the guest will not be allowed to check-in.</p>
+                        <p>Local ID proof & Pan card will not be acceptable as ID proof.</p>
+                        <p>Unless mentioned, the tariff does not include charges for optional room services (such as
+                            telephone calls,
+                            room service, mini bar, snacks, laundry extra bed etc.). In case, such additional charges
+                            are
+                            levied by the
+                            hotel(s), we shall not be held responsible for it.</p>
+                        <p>Personal food and beverages are strictly not permitted on the hotel premises.</p>
+                        <p>The hotel shall not be responsible for any loss of or damage to your personal belongings.In
+                            case
+                            any damage
+                            is done to the hotel property by guests during their stay, it will be the sole
+                            accountability of
+                            the guest.
+                        </p>
+                        <p>pNo charge for children below 6 years and the extra cost will be applicable for availing an
+                            extra
+                            bed in a
+                            double occupancy room.</p>
+                        <p>Should any action by a guest be deemed inappropriate by the hotel, or if any inappropriate
+                            behaviour is
+                            brought to the attention of the hotel, the hotel reserves the right, after the allegations
+                            have
+                            been
+                            investigated, to take action against the guest.
+                        </p>
+                        <p>We would love to host you but in case your plans change, our simple cancellation process
+                            makes
+                            sure you
+                            receive a quick confirmation and fast refunds. Our standard check-in time is 12 noon and you
+                            can
+                            check-in
+                            any time after that till your reservation is valid.</p>
+                        <p>Pets are not allowed in the hotel premises.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="md:col-span-4 sticky top-6 pb-5 md:mt-[-7px]">
+                <h5 class="text-[22px] font-semibold mb-5 text-[#222]">Included</h5>
+                <div class="text-[#888383] text-sm ">
+                    <div class="border-b border-b-[#d4d1d1] py-3 grid grid-cols-2">
+                        <span>Hotel 1</span>
+                        <span>200 M to Masjidil Haram</span>
+                    </div>
+                    <div class="border-b border-b-[#d4d1d1] py-3 grid grid-cols-2">
+                        <span>Hotel 2</span>
+                        <span>200 M to Masjidil Nabawi</span>
+                    </div>
+                    <div class="border-b border-b-[#d4d1d1] py-3 grid grid-cols-2">
+                        <span>Plane</span>
+                        <span>Business Airplane</span>
+                    </div>
+                    <div class="border-b border-b-[#d4d1d1] py-3 grid grid-cols-2">
+                        <span>Food</span>
+                        <span>3x Food / Days</span>
+                    </div>
+                    <div class="border-b border-b-[#d4d1d1] py-3 grid grid-cols-2">
+                        <span>Syeikh</span>
+                        <span>Yes</span>
+                    </div>
+                    <div class="border-b border-b-[#d4d1d1] py-3 grid grid-cols-2">
+                        <span>Luggage</span>
+                        <span>Yes</span>
+                    </div>
+                    <div class="border-b border-b-[#d4d1d1] py-3 grid grid-cols-2">
+                        <span>Price</span>
+                        <span>15.000 USD/ Pax</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="footer bg-[#16191d]">
+        <div class="footer-top">
+          <div class="footer-top-container px-4 flex justify-between items-center">
+            <div class="footer-logo">
+              <a href="index.html"><img class="h-[80px] object-cover" src="../image/logo.png" alt="image"></a>
+            </div>
+            <ul class="footer-links">
+                <li><a class="whitespace-nowrap" href="./packages.html">Packages</a></li>
+                <li><a class="whitespace-nowrap" href="./strategic-partners.html">Strategic Partners</a></li>
+                <li><a class="whitespace-nowrap" href="./services.html">Services</a></li>
+                <li><a class="whitespace-nowrap" href="./about.html">About Us</a></li>
+                <li><a class="whitespace-nowrap" href="./contact.html">Contact Us</a></li>
+              </ul>
+            <div class="footer-social-media">
+              <a href="#">
+                <svg class="footer-icon" width="22" height="22" viewBox="0 0 22 22" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g opacity="0.4">
+                    <path
+                      d="M16.4883 1.8335H13.7402C12.5255 1.8335 11.3606 2.31638 10.5016 3.17592C9.6427 4.03547 9.16016 5.20125 9.16016 6.41683V9.16683H6.41211V12.8335H9.16016V20.1668H12.8242V12.8335H15.5723L16.4883 9.16683H12.8242V6.41683C12.8242 6.17371 12.9207 5.94056 13.0925 5.76865C13.2643 5.59674 13.4973 5.50016 13.7402 5.50016H16.4883V1.8335Z"
+                      stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </g>
+                </svg>
+              </a>
+              <a href="#">
+                <svg class="footer-icon" width="22" height="22" viewBox="0 0 23 22" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_470_2238)">
+                    <path
+                      d="M15.6194 7.3335C17.077 7.3335 18.475 7.91296 19.5057 8.94441C20.5364 9.97586 21.1155 11.3748 21.1155 12.8335V19.2502H17.4514V12.8335C17.4514 12.3473 17.2584 11.881 16.9148 11.5371C16.5713 11.1933 16.1053 11.0002 15.6194 11.0002C15.1335 11.0002 14.6675 11.1933 14.3239 11.5371C13.9804 11.881 13.7874 12.3473 13.7874 12.8335V19.2502H10.1233V12.8335C10.1233 11.3748 10.7023 9.97586 11.7331 8.94441C12.7638 7.91296 14.1617 7.3335 15.6194 7.3335V7.3335Z"
+                      stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M6.45923 8.25H2.79517V19.25H6.45923V8.25Z" stroke="white" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M4.6272 5.50016C5.639 5.50016 6.45923 4.67935 6.45923 3.66683C6.45923 2.65431 5.639 1.8335 4.6272 1.8335C3.61539 1.8335 2.79517 2.65431 2.79517 3.66683C2.79517 4.67935 3.61539 5.50016 4.6272 5.50016Z"
+                      stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_470_2238">
+                      <rect width="21.9844" height="22" fill="white" transform="translate(0.963135)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+              <a href="#">
+                <svg class="footer-icon" width="23" height="22" viewBox="0 0 23 22" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g opacity="0.4" clip-path="url(#clip0_470_2234)">
+                    <path
+                      d="M21.9942 2.75922C21.117 3.37841 20.1457 3.85198 19.1179 4.16172C18.5662 3.52694 17.833 3.07702 17.0175 2.87282C16.2019 2.66861 15.3434 2.71998 14.558 3.01997C13.7726 3.31995 13.0982 3.85409 12.626 4.55012C12.1539 5.24616 11.9067 6.07053 11.918 6.91172V7.82838C10.3082 7.87016 8.71309 7.51288 7.2747 6.78838C5.83631 6.06387 4.5993 4.99463 3.67383 3.67588C3.67383 3.67588 0.00976455 11.9259 8.25391 15.5926C6.3674 16.874 4.12007 17.5166 1.8418 17.4259C10.0859 22.0092 20.1621 17.4259 20.1621 6.88422C20.1613 6.62888 20.1367 6.37418 20.0888 6.12338C21.0237 5.20075 21.6835 4.03587 21.9942 2.75922V2.75922Z"
+                      stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_470_2234">
+                      <rect width="21.9844" height="22" fill="white" transform="translate(0.925781)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+              <a href="#">
+                <svg class="footer-icon" width="23" height="22" viewBox="0 0 23 22" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g opacity="0.4" clip-path="url(#clip0_470_2230)">
+                    <path
+                      d="M16.4619 1.8335H7.30176C4.77225 1.8335 2.72168 3.88552 2.72168 6.41683V15.5835C2.72168 18.1148 4.77225 20.1668 7.30176 20.1668H16.4619C18.9914 20.1668 21.042 18.1148 21.042 15.5835V6.41683C21.042 3.88552 18.9914 1.8335 16.4619 1.8335Z"
+                      stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M15.5463 10.4223C15.6594 11.1852 15.5291 11.9643 15.1742 12.6489C14.8192 13.3334 14.2576 13.8886 13.5692 14.2353C12.8808 14.5821 12.1007 14.7028 11.3398 14.5802C10.5789 14.4577 9.87595 14.0982 9.331 13.5529C8.78604 13.0075 8.42679 12.3041 8.30435 11.5426C8.18191 10.7812 8.30252 10.0005 8.64901 9.31163C8.9955 8.62274 9.55024 8.06072 10.2343 7.70551C10.9184 7.3503 11.697 7.21999 12.4593 7.33312C13.237 7.44852 13.9569 7.81113 14.5128 8.3674C15.0686 8.92367 15.431 9.64411 15.5463 10.4223Z"
+                      stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M16.9199 5.9585H16.9299" stroke="white" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_470_2230">
+                      <rect width="21.9844" height="22" fill="white" transform="translate(0.889648)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="footer-bottom px-4 flex justify-between items-center">
+          <p class="m-0 p-0">© 2024 - Ithraa</p>
+          <div>
+            <a href="#">terms & condition</a>
+            <a href="#">privecy & Policy</a>
+          </div>
+        </div>
+      </footer>
+
+    <script src="./javascript/app.js"></script>
+    <script src="./javascript/jquery.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./javascript/slick/slick.min.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+            $('.single-package-slider').slick({
+                autoplay: true,
+                infinite: false,
+                dots: true,
+                speed: 500,
+                // fade: true,
+                // cssEase: 'linear',
+                // arrows: true,
+            });
+        });
+
+        $(document).ready(function () {
+            $('.packages-slider-2').slick({
+                autoplay: true,
+                infinite: true,
+                speed: 500,
+                cssEase: 'linear',
+                arrows: false,
+            });
+        });
+
+        const langArray = [];
+
+        $('.select option').each(function () {
+            const img = $(this).attr("data-thumbnail");
+            const text = this.innerText;
+            const value = $(this).val();
+            const item = `<li><img src="${img}" alt="" value="${value}"/><span>${text}</span></li>`;
+            langArray.push(item);
+        })
+
+        $('#a').html(langArray);
+
+        //Set the button value to the first el of the array
+        $('.btn-select').html(langArray[0]).attr('value', 'en');
+
+        //change button stuff on click
+        $('#a li').click(function () {
+            const img = $(this).find('img').attr("src");
+            const value = $(this).find('img').attr('value');
+            const text = this.innerText;
+            const item = `<li><img src="${img}" alt="" value="${value}"/><span>${text}</span></li>`;
+            $('.btn-select').html(item).attr('value', value);
+            $(".b").toggle();
+        });
+
+        $(".btn-select").click(function () {
+            $(".b").toggle();
+        });
+    </script>
+
+</body>
+
+</html>

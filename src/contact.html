@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ithraa Group</title>
+  <link rel="stylesheet" href="style/css/style.css">
+  <!-- <link rel="stylesheet" href="style/bootstrap/bootstrap.min.css"> -->
+  <link rel="stylesheet" type="text/css" href="./javascript/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="./javascript/slick/slick-theme.css" />
+  <link href="output.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/d5436f6dc1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="relative z-20">
+    <div class="bg-[#e5a770] lg:pb-11 p-2 text-white ">
+      <div class="max-w-[1100px] mx-auto flex justify-between items-center">
+        <div class="flex gap-3 items-center text-sm">
+          <span>Follow Us: </span>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <div>
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:123-456-7890">123-456-7890</a>
+          </div>
+        </div>
+
+        <div class="default-selector parent text-black">
+          <select class="select ">
+            <option value="en" data-thumbnail="../image/us-flag.png">
+              English
+            </option>
+            <option value="cn" data-thumbnail="../image/saudi-flag.png">
+              Arabic
+            </option>
+          </select>
+          <div class="lang-select">
+            <button class="btn-select" value=""></button>
+            <div class="b">
+              <ul id="a"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="py-[15px] px-[18px] lg:rounded-[12px] border-b border-b-[#2c2a2a] lg:border-none z-10 lg:absolute lg:top-[50px] lg:left-1/2 lg:-translate-x-1/2 w-full bg-[#16191d] text-[#e5a770] flex justify-between items-center max-w-[1100px] mx-auto">
+      <div class="logo">
+       <a href="index.html"><img class="w-[100px] md:w-[140px] h-[50px]" src="../image/logo.png"
+            alt=""></a>
+      </div>
+      <div class="lg:hidden">
+        <i id="nav-show" class="fa-solid fa-bars text-[20px]"></i>
+        <i style="display: none;" id="nav-hide" class="fa-solid fa-xmark text-[20px]"></i>
+      </div>
+      <ul class="text-[#e5a770] hidden lg:flex items-center gap-6">
+        <li><a class="font-medium text-sm hover:text-[#f7caa2]" href="./packages.html">Packages</a></li>
+        <li><a class="font-medium text-sm hover:text-[#f7caa2]" href="./about.html">About Us</a></li>
+        <li><a class="font-medium text-sm hover:text-[#f7caa2]" href="./services.html">Services</a></li>
+        <li><a class="font-medium text-sm hover:text-[#f7caa2]" href="./strategic-partners.html">Strategic Partners</a>
+        </li>
+        <li><a class="font-medium text-sm hover:text-[#f7caa2]" href="./contact.html">Contact Us</a></li>
+      </ul>
+
+      <div class="hidden lg:flex">
+        <a href="./guide-login.html"
+          class="px-4 py-2 text-sm text-white hover:text-[#e5a770] transition-all duration-500 mr-2">Guide
+          login</a>
+        <a href="./agent-login.html"
+          class="px-4 py-2 text-sm rounded-lg border border-[#e5a770] text-white bg-[#e5a770] hover:bg-transparent hover:text-[#e5a770] transition-all duration-500 mr-2">Agent
+          login</a>
+      </div>
+
+    </div>
+
+    <ul id="mobile-menu" class="min-h-screen bg-[#16191d] text-[#e5a770] hidden p-5">
+      <li><a class="rounded-sm block mb-3 py-1 px-2 hover:bg-[#e5a770] hover:text-white font-medium text-[16px]"
+          href="./packages.html">Packages</a></li>
+      <li><a class="rounded-sm block mb-3 py-1 px-2 hover:bg-[#e5a770] hover:text-white font-medium text-[16px]"
+          href="./about.html">About Us</a></li>
+      <li><a class="rounded-sm block mb-3 py-1 px-2 hover:bg-[#e5a770] hover:text-white font-medium text-[16px]"
+          href="./services.html">Services</a></li>
+      <li><a class="rounded-sm block mb-3 py-1 px-2 hover:bg-[#e5a770] hover:text-white font-medium text-[16px]"
+          href="./strategic-partners.html">Strategic Partners</a></li>
+          </li>
+      <li><a class="rounded-sm block mb-3 py-1 px-2 hover:bg-[#e5a770] hover:text-white font-medium text-[16px]"
+          href="./contact.html">Contact Us</a></li>
+
+      <div class="w-full flex justify-between pt-10">
+        <a href="./guide-login.html" class="block text-center flex-1 px-4 py-2 text-sm border border-[#e5a770] rounded-lg
+        bg-transparent hover:text-white text-[#e5a770] hover:bg-[#e5a770] transition-all duration-500 mr-2">Guide
+          login</a>
+        <a href="./agent-login.html"
+          class="block text-center flex-1 px-4 py-2 text-sm rounded-lg border border-[#e5a770] text-white bg-[#e5a770] hover:bg-transparent hover:text-[#e5a770] transition-all duration-500 mr-2">Agent
+          login</a>
+      </div>
+    </ul>
+  </header>
+
+  <section class="h-[300px] overflow-hidden w-full -z-10 relative">
+    <div
+      class="absolute inset-0 lg:bottom-0 w-full bg-[#000000ab] z-10 flex items-center justify-center h-full max-h-full">
+      <h1 class="text-[#E5A770] text-[50px] font-bold">Keep In Touch</h1>
+    </div>
+    <div class="contact-slider mit-h-full">
+      <div class="min-h-[50vh]"><img class="h-full w-full object-cover min-h-[50vh]" src="../image/contact-slider-1.jpg"
+          alt=""></div>
+      <div class="min-h-[50vh]"><img class="h-full min-w-[120vw] object-cover min-h-[50vh]"
+          src="../image/contact-slider-2.jpg" alt=""></div>
+      <div class="min-h-[50vh]"><img class="h-full w-full object-cover min-h-[50vh]" src="../image/contact-slider-3.jpg"
+          alt=""></div>
+    </div>
+  </section>
+
+  <div class="relative isolate bg-white">
+    <div class="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
+      <div class="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-32">
+        <div class="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
+          <div
+            class="absolute inset-y-0 left-0 -z-10 w-full overflow-hidden bg-gray-100 ring-1 ring-gray-900/10 lg:w-1/2">
+            <svg
+              class="absolute inset-0 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+              aria-hidden="true">
+              <defs>
+                <pattern id="83fd4e5a-9d52-42fc-97b6-718e5d7ee527" width="200" height="200" x="100%" y="-1"
+                  patternUnits="userSpaceOnUse">
+                  <path d="M130 200V.5M.5 .5H200" fill="none"></path>
+                </pattern>
+              </defs>
+              <rect width="100%" height="100%" stroke-width="0" fill="white"></rect><svg x="100%" y="-1"
+                class="overflow-visible fill-gray-50">
+                <path d="M-470.5 0h201v201h-201Z" stroke-width="0"></path>
+              </svg>
+              <rect width="100%" height="100%" stroke-width="0" fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)">
+              </rect>
+            </svg>
+          </div>
+          <h2 class="text-3xl font-bold tracking-tight text-gray-900">Contact Us</h2>
+          <p class="mt-6 text-lg leading-8 text-gray-600">Feel free to reach out to us for any inquiries or assistance.
+            We're here to help!</p>
+          <dl class="mt-10 space-y-4 text-base leading-7 text-gray-600">
+
+            <div class="flex flex-wrap">
+              <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:w-full xl:w-6/12">
+                <div class="flex items-start">
+                  <div class="shrink-0">
+                    <div class="inline-block rounded-md bg-sky-200 p-4 text-primary">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                        stroke="currentColor" class="h-6 w-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M14.25 9.75v-4.5m0 4.5h4.5m-4.5 0l6-6m-3 18c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 014.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 00-.38 1.21 12.035 12.035 0 007.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 011.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 01-2.25 2.25h-2.25z" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="ml-6 grow">
+                    <p class="mb-2 font-bold ">
+                      Email Address
+                    </p>
+                    <p class="text-sm text-neutral-500">
+                      Care@ithraa.group
+                    </p>
+                    <!-- <p class="text-sm text-neutral-500">
+                      1-600-890-4567
+                    </p> -->
+                  </div>
+                </div>
+              </div>
+              <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:w-full xl:w-6/12">
+                <div class="flex items-start">
+                  <div class="srink-0">
+                    <div class="inline-block rounded-md bg-sky-200 p-4 text-primary">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                        stroke="currentColor" class="w-7 h-7">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5zm6-10.125a1.875 1.875 0 11-3.75 0 1.875 1.875 0 013.75 0zm1.294 6.336a6.721 6.721 0 01-3.17.789 6.721 6.721 0 01-3.168-.789 3.376 3.376 0 016.338 0z" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="ml-6 grow">
+                    <p class="mb-2 font-bold ">
+                      Address
+                    </p>
+                    <p class="text-sm text-neutral-500">
+                      abcd, <br>
+                      xyz <br>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- <div
+                class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-6/12 md:px-3 lg:mb-12 lg:w-full xl:w-6/12">
+                <div class="align-start flex">
+                  <div class="shrink-0">
+                    <div class="inline-block rounded-md bg-sky-200 p-4 text-primary">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class="w-7 h-7"
+                        viewBox="0 0 111.756 122.879" enable-background="new 0 0 111.756 122.879" xml:space="preserve">
+                        <g>
+                          <path
+                            d="M27.953,5.569v96.769h19.792V5.569H37.456H27.953L27.953,5.569z M21.898,105.123V2.785C21.898,1.247,23.254,0,24.926,0 h12.53h13.316C52.443,0,53.8,1.247,53.8,2.785v102.338c0,1.537-1.356,2.783-3.028,2.783H24.926 C23.254,107.906,21.898,106.66,21.898,105.123L21.898,105.123z M13.32,17.704c1.671,0,3.027,1.247,3.027,2.785 s-1.355,2.784-3.027,2.784H7.352c-0.161,0-0.292,0.022-0.39,0.064c-0.129,0.056-0.276,0.166-0.429,0.325 c-0.161,0.167-0.281,0.346-0.353,0.528c-0.083,0.208-0.125,0.465-0.125,0.759v90.803c0,0.287,0.043,0.537,0.125,0.74l0.034,0.092 c0.068,0.135,0.165,0.264,0.284,0.383c0.126,0.125,0.258,0.217,0.39,0.27c0.123,0.051,0.279,0.074,0.466,0.074h97.052 c0.188,0,0.346-0.025,0.467-0.074c0.133-0.053,0.264-0.145,0.389-0.27c3.035-3.035,0.441,1.799,0.441-1.215V24.949 c0-3.667,3.039,2.357-0.477-1.288c-0.143-0.146-0.287-0.254-0.43-0.314c-0.113-0.048-0.246-0.075-0.391-0.075H62.563 c-1.672,0-3.027-1.247-3.027-2.784s1.355-2.785,3.027-2.785h41.842c1.041,0,2.029,0.204,2.943,0.597 c0.895,0.385,1.699,0.945,2.393,1.663c0.664,0.686,1.17,1.468,1.514,2.334c0.332,0.839,0.502,1.726,0.502,2.652v90.803 c0,0.938-0.168,1.826-0.502,2.654c-0.344,0.859-0.865,1.639-1.549,2.324c-0.701,0.703-1.506,1.234-2.398,1.598 c-0.906,0.367-1.879,0.551-2.902,0.551H7.352c-1.022,0-1.995-0.184-2.901-0.551c-0.894-0.363-1.698-0.896-2.399-1.598 c-0.621-0.623-1.107-1.33-1.45-2.107c-0.036-0.07-0.069-0.143-0.099-0.217C0.168,117.574,0,116.684,0,115.752V24.949 c0-0.921,0.17-1.811,0.504-2.652c0.342-0.863,0.849-1.648,1.512-2.334c0.683-0.707,1.488-1.263,2.393-1.652 c0.929-0.401,1.917-0.607,2.943-0.607H13.32L13.32,17.704z M65.902,29.03h27.049c0.803,0,1.566,0.145,2.291,0.431 c0.076,0.03,0.15,0.063,0.223,0.099c0.607,0.269,1.166,0.635,1.666,1.096c0.584,0.533,1.027,1.128,1.326,1.782 c0.047,0.104,0.088,0.21,0.119,0.317c0.225,0.584,0.34,1.189,0.34,1.812v12.611c0,0.744-0.156,1.45-0.459,2.118l-0.004,0.009 l0.004,0.002c-0.291,0.64-0.725,1.224-1.291,1.75c-0.58,0.546-1.227,0.956-1.932,1.231c-0.736,0.287-1.5,0.426-2.283,0.426H65.902 c-0.777,0-1.535-0.14-2.27-0.426c-0.693-0.269-1.33-0.668-1.912-1.198c-0.588-0.539-1.031-1.144-1.326-1.81 c-0.033-0.078-0.063-0.157-0.09-0.235c-0.234-0.605-0.35-1.228-0.35-1.867V34.567c0-0.723,0.146-1.424,0.445-2.099l-0.006-0.002 c0.295-0.666,0.738-1.271,1.326-1.81l0.037-0.032l-0.002-0.001c0.877-0.78,2.039-1.219,2.119-1.244 C64.537,29.147,65.215,29.03,65.902,29.03L65.902,29.03z M93.475,34.599h-28.08v12.547h28.08V34.599L93.475,34.599z M78.877,63.42 c1.072,0,2.01,0.41,2.807,1.207s1.188,1.734,1.188,2.785c0,1.148-0.389,2.104-1.188,2.865c-0.799,0.758-1.734,1.129-2.807,1.129 c-1.129,0-2.084-0.371-2.844-1.129c-0.76-0.762-1.148-1.717-1.148-2.865c0-1.051,0.391-1.988,1.148-2.785 S77.748,63.42,78.877,63.42L78.877,63.42z M90.977,63.42c1.072,0,2.008,0.41,2.805,1.207s1.189,1.734,1.189,2.785 c0,1.148-0.391,2.104-1.189,2.865c-0.799,0.758-1.732,1.129-2.805,1.129c-1.131,0-2.086-0.371-2.846-1.129 c-0.76-0.762-1.148-1.717-1.148-2.865c0-1.051,0.391-1.988,1.148-2.785S89.846,63.42,90.977,63.42L90.977,63.42z M66.662,75.518 c1.15,0,2.105,0.389,2.865,1.148s1.129,1.715,1.129,2.865c0,1.051-0.371,1.988-1.129,2.785s-1.715,1.209-2.865,1.209 c-1.053,0-1.988-0.412-2.785-1.209s-1.209-1.734-1.209-2.785c0-1.15,0.41-2.105,1.209-2.865S65.609,75.518,66.662,75.518 L66.662,75.518z M78.877,75.518c1.072,0,2.008,0.389,2.807,1.148s1.188,1.715,1.188,2.865c0,1.051-0.391,1.988-1.188,2.785 s-1.734,1.209-2.807,1.209c-1.129,0-2.086-0.412-2.844-1.209s-1.148-1.734-1.148-2.785c0-1.15,0.389-2.105,1.148-2.865 S77.748,75.518,78.877,75.518L78.877,75.518z M90.977,75.518c1.072,0,2.006,0.389,2.805,1.148s1.189,1.715,1.189,2.865 c0,1.051-0.393,1.988-1.189,2.785s-1.732,1.209-2.805,1.209c-1.131,0-2.088-0.412-2.846-1.209s-1.148-1.734-1.148-2.785 c0-1.15,0.389-2.105,1.148-2.865S89.846,75.518,90.977,75.518L90.977,75.518z M66.662,87.518c1.15,0,2.107,0.393,2.865,1.189 s1.129,1.773,1.129,2.922c0,1.053-0.369,1.988-1.129,2.787s-1.715,1.207-2.865,1.207c-1.053,0-1.986-0.408-2.785-1.207 s-1.209-1.734-1.209-2.787c0-1.148,0.412-2.125,1.209-2.922S65.609,87.518,66.662,87.518L66.662,87.518z M78.877,87.518 c1.072,0,2.01,0.393,2.807,1.189s1.188,1.773,1.188,2.922c0,1.053-0.389,1.988-1.188,2.787s-1.734,1.207-2.807,1.207 c-1.129,0-2.084-0.408-2.844-1.207s-1.148-1.734-1.148-2.787c0-1.148,0.391-2.125,1.148-2.922S77.748,87.518,78.877,87.518 L78.877,87.518z M90.977,87.518c1.072,0,2.008,0.393,2.805,1.189s1.189,1.773,1.189,2.922c0,1.053-0.391,1.988-1.189,2.787 s-1.732,1.207-2.805,1.207c-1.131,0-2.086-0.408-2.846-1.207s-1.148-1.734-1.148-2.787c0-1.148,0.391-2.125,1.148-2.922 S89.846,87.518,90.977,87.518L90.977,87.518z M78.877,99.617c1.072,0,2.008,0.389,2.807,1.188s1.188,1.734,1.188,2.807 c0,1.129-0.389,2.084-1.188,2.844s-1.734,1.148-2.807,1.148c-1.129,0-2.084-0.389-2.844-1.148s-1.148-1.715-1.148-2.844 c0-1.072,0.389-2.008,1.148-2.807S77.748,99.617,78.877,99.617L78.877,99.617z M66.662,63.42c1.15,0,2.107,0.41,2.865,1.207 s1.129,1.734,1.129,2.785c0,1.148-0.369,2.104-1.129,2.865c-0.76,0.758-1.715,1.129-2.865,1.129c-1.053,0-1.986-0.371-2.785-1.129 c-0.799-0.762-1.209-1.717-1.209-2.865c0-1.051,0.412-1.988,1.209-2.785S65.609,63.42,66.662,63.42L66.662,63.42z" />
+                        </g>
+                      </svg>
+
+                    </div>
+                  </div>
+                  <div class="ml-6 grow">
+                    <p class="mb-2 font-bold ">Land Line</p>
+                    <p class="text-neutral-500"> (0421) 431 2030
+                    </p>
+                  </div>
+                </div>
+              </div> -->
+              <div class="w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:w-full xl:mb-12 xl:w-6/12">
+                <div class="align-start flex">
+                  <div class="shrink-0">
+                    <div class="inline-block rounded-md bg-sky-200 p-4 text-primary">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="ml-6 grow">
+                    <p class="mb-2 font-bold ">Mobile</p>
+                    <p class="text-neutral-500"> +966920001460
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </dl>
+        </div>
+      </div>
+      <form class="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-32">
+        <div class="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
+          <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+            <div>
+              <label for="first-name" class="block text-sm font-semibold leading-6 text-gray-900">First name</label>
+              <div class="mt-2.5">
+                <input type="text" id="first-name" autocomplete="given-name"
+                  class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-inset focus:outline-1 focus:outline-[#E5A770] sm:text-sm sm:leading-6"
+                  name="firstName">
+              </div>
+            </div>
+            <div>
+              <label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900">Last name</label>
+              <div class="mt-2.5">
+                <input type="text" id="last-name" autocomplete="family-name"
+                  class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-inset focus:outline-1 focus:outline-[#E5A770] sm:text-sm sm:leading-6"
+                  name="lastName">
+              </div>
+            </div>
+            <div class="sm:col-span-2">
+              <label for="email" class="block text-sm font-semibold leading-6 text-gray-900">Email</label>
+              <div class="mt-2.5">
+                <input type="email" id="email" autocomplete="email"
+                  class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-inset focus:outline-1 focus:outline-[#E5A770] sm:text-sm sm:leading-6"
+                  name="email">
+              </div>
+            </div>
+            <div class="sm:col-span-2">
+              <label for="phone" class="block text-sm font-semibold leading-6 text-gray-900">Phone</label>
+              <div class="mt-2.5">
+                <input type="number" id="phone" autocomplete="phone"
+                  class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-inset focus:outline-1 focus:outline-[#E5A770] sm:text-sm sm:leading-6"
+                  name="phone">
+              </div>
+            </div>
+            <div class="sm:col-span-2">
+              <label for="message" class="block text-sm font-semibold leading-6 text-gray-900">Message</label>
+              <div class="mt-2.5">
+                <textarea id="message" rows="4"
+                  class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-inset focus:outline-1 focus:outline-[#E5A770] sm:text-sm sm:leading-6"
+                  name="message"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="mt-8 flex justify-end">
+            <button type="submit"
+              class="w-max  rounded-2xl border-2 border-[#E5A770] bg-[#E5A770]  px-5 py-1.5 text-sm font-semibold text-white transition-colors duration-150 ease-in-out hover:border-[#E5A770] hover:bg-[#d89154]">Send</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+  <!-- <section class="py-16 md:py-40">
+    <div class="md:bg-[#e5a770] md:h-[400px]">
+      <div
+        class="max-w-[1270px] mx-auto px-3 flex justify-center md:justify-between items-center gap-5 relative h-full">
+        <div class="text-white md:block hidden">
+          <div class="mb-5 flex items-start gap-5">
+            <i class="fa-solid fa-phone-volume text-[24px]"></i>
+            <div>
+              <h2 class="text-[24px] font-medium text-white mb-2 leading-[24px]">Call Us</h2>
+              <a class="text-[15px] text-white" href="tel:0123 0123 0123">0123 0123 0123</a>
+              <span>,</span>
+              <a class="text-[15px] text-white" href="tel:0123 0123 0123">0123 0123 0123</a>
+            </div>
+          </div>
+
+          <div class="mb-5 flex items-start gap-5">
+            <i class="fa-solid fa-location-dot text-[24px]"></i>
+            <div>
+              <h2 class="text-[24px] font-medium text-white mb-2 leading-[24px]">Location</h2>
+              <span class="text-[15px] text-white">0123 Rock Street, 21 Avenue, Saudi Arabia</span>
+            </div>
+          </div>
+
+          <div class="mb-5 flex items-start gap-5">
+            <i class="fa-regular fa-clock text-[24px]"></i>
+            <div>
+              <h2 class="text-[24px] font-medium text-white mb-2 leading-[24px]">Business Hours</h2>
+              <span class="text-[15px] text-white">Monday - Friday ...... 10am - 8pm, Saturday, Sunday .....
+                Closed</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div>
+          <form
+            class="bg-white shadow-lg rounded-[15px] px-6 py-8 border border-gray-200 max-w-[450px] md:-mt-[100px] md:absolute top-0 right-0">
+            <h1 class="text-black text-[30px] font-semibold mb-5">Contact Us</h1>
+            <div class="flex gap-3 mb-3">
+              <div class="w-50">
+                <label class="text-[14px] mb-2" for="FirstName">First Name</label>
+                <input name="FirstName" class="w-full py-2 px-3 rounded-md border border-gray-300 focus:outline-none"
+                  placeholder="Enter your name" type="text" value="">
+              </div>
+
+              <div class="form-group w-50">
+                <label class="text-[14px] mb-2" for="LastName">Last Name</label>
+                <input class="w-full py-2 px-3 rounded-md border border-gray-300 focus:outline-none" name="LastName"
+                  placeholder="Enter your name" type="text" value="">
+              </div>
+            </div>
+            <div class=" mb-3">
+              <label class="text-[14px] mb-2" for="Email">Email</label>
+              <input class="w-full py-2 px-3 rounded-md border border-gray-300 focus:outline-none" id="Email"
+                maxlength="255" name="Email" placeholder="Enter your email" type="text" value="">
+            </div>
+
+            <div class=" mb-3">
+              <label class="text-[14px] mb-2" for="Phone">Phone</label>
+              <input class="w-full py-2 px-3 rounded-md border border-gray-300 focus:outline-none" id="Phone"
+                name="Phone" placeholder="Enter Your Phone Number" type="text" value="">
+            </div>
+
+            <div class=" mb-3">
+              <label class="text-[14px] mb-2" for="Message">Message</label>
+              <textarea class="w-full py-2 px-3 rounded-md border border-gray-300 focus:outline-none" id="Message"
+                name="Message" placeholder="Enter Your Message" rows="5"></textarea>
+            </div>
+
+            <button
+              class="bg-[#e5a770] px-[25px] py-[10px] text-white rounded-md hover:bg-[#91653f] mt-5 block ml-auto">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <footer class="footer bg-[#16191d]">
+    <div class="footer-top">
+      <div class="footer-top-container px-4 flex justify-between items-center">
+        <div class="footer-logo">
+          <a href="index.html"><img class="h-[80px] object-cover" src="../image/logo.png" alt="image"></a>
+        </div>
+        <ul class="footer-links">
+          <li><a class="whitespace-nowrap" href="./packages.html">Packages</a></li>
+          <li><a class="whitespace-nowrap" href="./strategic-partners.html">Strategic Partners</a></li>
+          <li><a class="whitespace-nowrap" href="./services.html">Services</a></li>
+          <li><a class="whitespace-nowrap" href="./about.html">About Us</a></li>
+          <li><a class="whitespace-nowrap" href="./contact.html">Contact Us</a></li>
+        </ul>
+        <div class="footer-social-media">
+          <a href="#">
+            <svg class="footer-icon" width="22" height="22" viewBox="0 0 22 22" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <g opacity="0.4">
+                <path
+                  d="M16.4883 1.8335H13.7402C12.5255 1.8335 11.3606 2.31638 10.5016 3.17592C9.6427 4.03547 9.16016 5.20125 9.16016 6.41683V9.16683H6.41211V12.8335H9.16016V20.1668H12.8242V12.8335H15.5723L16.4883 9.16683H12.8242V6.41683C12.8242 6.17371 12.9207 5.94056 13.0925 5.76865C13.2643 5.59674 13.4973 5.50016 13.7402 5.50016H16.4883V1.8335Z"
+                  stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="footer-icon" width="22" height="22" viewBox="0 0 23 22" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_470_2238)">
+                <path
+                  d="M15.6194 7.3335C17.077 7.3335 18.475 7.91296 19.5057 8.94441C20.5364 9.97586 21.1155 11.3748 21.1155 12.8335V19.2502H17.4514V12.8335C17.4514 12.3473 17.2584 11.881 16.9148 11.5371C16.5713 11.1933 16.1053 11.0002 15.6194 11.0002C15.1335 11.0002 14.6675 11.1933 14.3239 11.5371C13.9804 11.881 13.7874 12.3473 13.7874 12.8335V19.2502H10.1233V12.8335C10.1233 11.3748 10.7023 9.97586 11.7331 8.94441C12.7638 7.91296 14.1617 7.3335 15.6194 7.3335V7.3335Z"
+                  stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M6.45923 8.25H2.79517V19.25H6.45923V8.25Z" stroke="white" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M4.6272 5.50016C5.639 5.50016 6.45923 4.67935 6.45923 3.66683C6.45923 2.65431 5.639 1.8335 4.6272 1.8335C3.61539 1.8335 2.79517 2.65431 2.79517 3.66683C2.79517 4.67935 3.61539 5.50016 4.6272 5.50016Z"
+                  stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <defs>
+                <clipPath id="clip0_470_2238">
+                  <rect width="21.9844" height="22" fill="white" transform="translate(0.963135)" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="footer-icon" width="23" height="22" viewBox="0 0 23 22" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <g opacity="0.4" clip-path="url(#clip0_470_2234)">
+                <path
+                  d="M21.9942 2.75922C21.117 3.37841 20.1457 3.85198 19.1179 4.16172C18.5662 3.52694 17.833 3.07702 17.0175 2.87282C16.2019 2.66861 15.3434 2.71998 14.558 3.01997C13.7726 3.31995 13.0982 3.85409 12.626 4.55012C12.1539 5.24616 11.9067 6.07053 11.918 6.91172V7.82838C10.3082 7.87016 8.71309 7.51288 7.2747 6.78838C5.83631 6.06387 4.5993 4.99463 3.67383 3.67588C3.67383 3.67588 0.00976455 11.9259 8.25391 15.5926C6.3674 16.874 4.12007 17.5166 1.8418 17.4259C10.0859 22.0092 20.1621 17.4259 20.1621 6.88422C20.1613 6.62888 20.1367 6.37418 20.0888 6.12338C21.0237 5.20075 21.6835 4.03587 21.9942 2.75922V2.75922Z"
+                  stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <defs>
+                <clipPath id="clip0_470_2234">
+                  <rect width="21.9844" height="22" fill="white" transform="translate(0.925781)" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="footer-icon" width="23" height="22" viewBox="0 0 23 22" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <g opacity="0.4" clip-path="url(#clip0_470_2230)">
+                <path
+                  d="M16.4619 1.8335H7.30176C4.77225 1.8335 2.72168 3.88552 2.72168 6.41683V15.5835C2.72168 18.1148 4.77225 20.1668 7.30176 20.1668H16.4619C18.9914 20.1668 21.042 18.1148 21.042 15.5835V6.41683C21.042 3.88552 18.9914 1.8335 16.4619 1.8335Z"
+                  stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M15.5463 10.4223C15.6594 11.1852 15.5291 11.9643 15.1742 12.6489C14.8192 13.3334 14.2576 13.8886 13.5692 14.2353C12.8808 14.5821 12.1007 14.7028 11.3398 14.5802C10.5789 14.4577 9.87595 14.0982 9.331 13.5529C8.78604 13.0075 8.42679 12.3041 8.30435 11.5426C8.18191 10.7812 8.30252 10.0005 8.64901 9.31163C8.9955 8.62274 9.55024 8.06072 10.2343 7.70551C10.9184 7.3503 11.697 7.21999 12.4593 7.33312C13.237 7.44852 13.9569 7.81113 14.5128 8.3674C15.0686 8.92367 15.431 9.64411 15.5463 10.4223Z"
+                  stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M16.9199 5.9585H16.9299" stroke="white" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </g>
+              <defs>
+                <clipPath id="clip0_470_2230">
+                  <rect width="21.9844" height="22" fill="white" transform="translate(0.889648)" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom px-4 flex justify-between items-center">
+      <p class="m-0 p-0">© 2024 - Ithraa</p>
+      <div>
+        <a href="#">terms & condition</a>
+        <a href="#">privecy & Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- <script src="javascript/bootstrap/bootstrap.bundle.min.js"></script> -->
+  <script src="./javascript/app.js"></script>
+  <script src="./javascript/jquery.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="./javascript/slick/slick.min.js"></script>
+
+  <script>
+
+    $(document).ready(function () {
+      $('.contact-slider').slick({
+        autoplay: true,
+        infinite: true,
+        speed: 500,
+        cssEase: 'linear',
+        arrows: false,
+      });
+    });
+
+    const langArray = [];
+
+    $('.select option').each(function () {
+      const img = $(this).attr("data-thumbnail");
+      const text = this.innerText;
+      const value = $(this).val();
+      const item = `<li><img src="${img}" alt="" value="${value}"/><span>${text}</span></li>`;
+      langArray.push(item);
+    })
+
+    $('#a').html(langArray);
+
+    $('.btn-select').html(langArray[0]).attr('value', 'en');
+
+    $('#a li').click(function () {
+      const img = $(this).find('img').attr("src");
+      const value = $(this).find('img').attr('value');
+      const text = this.innerText;
+      const item = `<li><img src="${img}" alt="" value="${value}"/><span>${text}</span></li>`;
+      $('.btn-select').html(item).attr('value', value);
+      $(".b").toggle();
+    });
+
+    $(".btn-select").click(function () {
+      $(".b").toggle();
+    });
+  </script>
+
+</body>
+
+</html>
